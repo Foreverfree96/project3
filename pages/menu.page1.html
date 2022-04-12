@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project3\project3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project3\project3.css">
     <script src="https://kit.fontawesome.com/6ced150206.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">   
     <title>Document</title>
 </head>
 <body>
-  <header>
-    <a class="menu--logo" href="#"><img class="image--menu__logo" src="images\logo\ohmyfood.png"></a>
-    <section>
-        <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
-    </section>
-  </header>
+<header>
+  <nav>
+    <div class="flexbox--wrap">
+    <a href="/index.html"><i class="fa-solid fa-arrow-left arrow"></i></a> <img class="img__logo" src="/images/logo/ohmyfood.png" alt="logo">
+    </div>  
+  </nav>  
+</header>
+<main>
+  <img class="image__entree" src="http://127.0.0.1:5500/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
+  <div class="flexbox--entree__menu">
+  <h1 class="h1__menu">The Full Pallete <i class="fa-regular fa-heart heart"></i></h1>
+  <p class="entree__menu">ENTREES</p>
+  <div class="entree__card">
+  <h3 class="entree__menu--maindish">Escargot</h3>
+  <p class="entree__menu--sidedish">With southern French spices<b class="money">25€</b></p>
+ <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Duck Foie Gras</h3>
+    <p class="entree__menu--sidedish">With black truffle shavings<b class="money">35€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <div class="entree__card">
+      <h3 class="entree__menu--maindish">Fried egg</h3>
+      <p class="entree__menu--sidedish">Seasoned with truffle cream and...<b class="money">20€</b></p>
+     <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <p class="entree__menu">MAIN DISH</p>
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Herb-Encrusted Steak</h3>
+    <p class="entree__menu--sidedish">With delicately sliced and seasoned veg...<b class="money">40€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div> 
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Ox Tail Shepard's Pie</h3>
+    <p class="entree__menu--sidedish">With black truffle and pureed parsnips<b class="money">35€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div> 
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Filet of Sole</h3>
+    <p class="entree__menu--sidedish">With citrus dressing<b class="money">44€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <p class="entree__menu">DESSERTS</p>
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Paris-Brest</h3>
+    <p class="entree__menu--sidedish">Revisted<b class="money">18€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Chocolate Macaroons</h3>
+    <p class="entree__menu--sidedish">With vanilla ice cream<b class="money">22€</b></p>
+   <i class="fa-solid fa-check check-mark"></i>
+  </div>  
+  <div class="entree__card">
+    <h3 class="entree__menu--maindish">Chocolate Mousse</h3>
+    <p class="entree__menu--sidedish">With spices and black truffle<b class="money">23€</b></p>
+    <i class="fa-solid fa-check check-mark"></i>
+  </div>
+  <button class="order__now--button">Order</button>    
+  </div>
+  <footer>
+    <div class="footer--flexbox">
+        <a class="footer--text__logo" href="#">ohmyfood</a> 
+        <a class="footer--text" href="#"><i class="fa-solid fa-utensils"></i>  Suggest a restaurant</a>
+        <a class="footer--text" href="#"><i class="fa-solid fa-handshake-angle"></i>  Become a partner</a>
+        <a class="footer--text" href="#">Legal</a>
+        <a class="footer--text" href="#">Contact</a>
+    </div>
+    </footer>
+</main>
 </body>
 </html>

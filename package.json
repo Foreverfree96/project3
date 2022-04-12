@@ -1,13 +1,11 @@
 {
-    "name": "project3",
-    "version": "1.0.0",
-    "description": "project 3 website",
-    "main": "index.js",
-    "scripts": {
-      "sass": "sass ./project3/project3.scss: .project3/project3.css -w --style compressed",
-      "prefix":"postcss ./project3/project3.css --use autoprefixer -d .project3/project3.css/prefixed/"
-    },
-    "author": "",
-    "license": "ISC",
-    "browserslist": "last 4 versions"
-  }
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "": ""
+  },
+  "author": "",
+  "license": "ISC",
+}

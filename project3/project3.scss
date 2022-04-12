@@ -215,4 +215,106 @@
             color: white;
            text-decoration: none;
         }
+        // MOBILE VERSION HTML PAGE 1 \\
+        .flexbox--wrap{
+            background-color: $gray-background;
+            justify-content: flex-start;
+            display: flex;
+        }
+        .arrow{
+            padding-left: 25px;
+            margin-top: 25px;
+            color: $charcoal;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .img__logo{
+            padding: 20px 0px 15px 35px;
+            width: 65%;
+        }
+        .image__entree{
+            object-fit: cover;
+            width: 100%;
+        }
+        .flexbox--entree__menu{
+            border-radius: 40px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .h1__menu{
+            font-family: shrikhand;
+        }
+        .heart{
+            margin-left: 25px;
+            font-size: 25px;
+        }
+        .entree__menu{
+            padding-bottom: 5px;
+            position: relative;
+            padding-top: 25px;
+            font-family: roboto;
+        }
+        .entree__menu::after{
+            content: '';
+            height: 3px;
+            width: 12%;
+            background-color: $mint-green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .entree__card{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 10px 11px 20px 20px;
+            margin-top: 10px;
+            background-color: white;
+            padding-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .entree__menu--maindish{
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish{
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .check-mark{
+            text-align: right;
+            border-color: $mint-green;
+            color: $mint-green;
+            background-color: white;
+      
+        }
+        .money{
+            margin-top: -20px;
+            justify-content: end;
+            display: flex;
+        }
+        .order__now--button{
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 16px;
+            width: 60%;
+            height: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px 5px gray;
+            border-radius: 20px;
+            border-color: $secondary-pink;
+            background-color: $secondary-pink;
+            color: white;
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        }
+        .order__now--button:hover{
+            opacity: .8;
+        }
+        .img__background{
+            background-image: url("http://127.0.0.1:5500/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        }
     }
