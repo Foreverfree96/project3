@@ -163,6 +163,7 @@
             background-color: white;
         }
         .menu__foodname-text {
+            color: black;
             font-family: roboto;
             justify-content: space-between;
             display: flex;
@@ -171,31 +172,47 @@
             margin-top: 10px;
         }
         .menu__location--text {
+            color: black;
             font-family: roboto;
             padding-bottom: 10px;
             margin-bottom: 20px;
             margin-left: 20px;
         }
         .solid-heart{
-            color: $secondary-pink;
-            margin-right: -34px;
-            margin-left: 20px;
+            margin-top: 15px;
+            margin-left: -45px;
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
             font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
         }
-        .hearts--icons{
-            right: 5px;
+        .hearts__icons--wrap{
+            right: 25px;
             position: absolute;
         }
-        .heart-icon {
-            margin-right: 50px;
-            margin-left: 5px;
+        .hearts__icons--wrap:hover .outline-heart {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap:hover .solid-heart {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart{
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            margin-left: -45px;
             font-size: 25px;
             margin-top: 15px;
-            justify-content: flex-end;
-            display: flex;
-        }
-        .heart-icon:hover {
-            color: $primary-purple;
         }
         .footer--text__logo{
             margin-bottom: 15px;
@@ -216,6 +233,10 @@
            text-decoration: none;
         }
         // MOBILE VERSION HTML PAGE 1 \\
+        .main{
+            overflow: hidden;
+            position: relative;
+        }
         .flexbox--wrap{
             background-color: $gray-background;
             justify-content: flex-start;
@@ -233,11 +254,15 @@
             width: 65%;
         }
         .image__entree{
+            object-position: -15px 0;
             object-fit: cover;
-            width: 100%;
+            width: 112%;
         }
         .flexbox--entree__menu{
-            border-radius: 40px;
+            z-index: 10px;
+            position: relative; 
+            margin-top: -40px;
+            border-radius: 40px 40px 0px 0px;
             background-color: $gray-background;
             padding: 25px 25px 60px 25px;
             flex-direction: column;
@@ -298,7 +323,6 @@
         }
         .order__now--button{
             margin-top: 50px;
-            margin-left: 50px;
             font-size: 16px;
             width: 60%;
             height: 50px;
