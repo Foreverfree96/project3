@@ -3,7 +3,7 @@
     // MOBILE VERSION \\
     @media all and (max-width: 768px) {
        .logo {
-            box-shadow:  black 0px 0px 3px 0px;
+            box-shadow:  black 10px 0px 10px 0px;
             padding-bottom: 5px;
             justify-content: center;
             display: flex;
@@ -322,6 +322,7 @@
             display: flex;
         }
         .order__now--button{
+            margin-left: 50px;
             margin-top: 50px;
             font-size: 16px;
             width: 60%;
@@ -340,5 +341,67 @@
         }
         .img__background{
             background-image: url("http://127.0.0.1:5500/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        }
+        // HTML PAGE 2 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu1{
+            z-index: 10px;
+            position: relative; 
+            margin-top: -180px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .image__entree1{
+            object-position: -40px 0px;
+            object-fit: cover;
+            width: 112%;
+        }
+        .heart--title__page2{
+            position: absolute;
+            top: 35px;
+            right: 30px;
+            font-size: 25px;
+        }
+        .entree__card1{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 10px 11px 20px 20px;
+            margin-top: 10px;
+            background-color: white;
+            padding-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            font-family: roboto;
+        }
+        // HTML PAGE 3 EXTRA CSS CLASSES \\
+        .heart--title__page3{
+            position: absolute;
+            top: 35px;
+            right: 40px;
+            font-size: 25px;
+        }
+        .flexbox--entree__menu2{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -63px;
+        }
+        // HTML PAGE 4 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu3{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -68px;
         }
     }
