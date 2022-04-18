@@ -206,6 +206,7 @@
             background: linear-gradient(to bottom #FF79DA, #9356DC);
         }
         .outline-heart{
+            color: black;
             position: absolute;
             opacity: 100%;
             transition: opacity
@@ -309,19 +310,31 @@
             margin-bottom: 5px;
             font-family: roboto;
         }
+        
+        .check-mark:hover{
+           transform: translate(-50px, 0px);
+        //    transform: rotate(360deg);
+        }
         .check-mark{
-            text-align: right;
-            border-color: $mint-green;
-            color: $mint-green;
-            background-color: white;
-      
+            transition: transform 3s ease-in-out;
+            // visibility: hidden;
+            font-size: 18px;
+            margin-top: -10px;
+            left: 80%;
+            position: absolute;
+            padding: 19px;
+            border-radius: 0px 15px 15px 0px;
+            color: white;
+            background-color: $mint-green;
         }
         .money{
+            margin-right: 30px;
             margin-top: -20px;
             justify-content: end;
             display: flex;
         }
         .order__now--button{
+            margin-bottom: 50px;
             margin-left: 50px;
             margin-top: 50px;
             font-size: 16px;
@@ -329,7 +342,6 @@
             height: 50px;
             font-family: Roboto;
             font-weight: bold;
-            box-shadow: 5px 5px 5px 5px gray;
             border-radius: 20px;
             border-color: $secondary-pink;
             background-color: $secondary-pink;
@@ -340,7 +352,7 @@
             opacity: .8;
         }
         .img__background{
-            background-image: url("http://127.0.0.1:5500/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+            background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
         }
         // HTML PAGE 2 EXTRA CSS CLASSES \\
         .flexbox--entree__menu1{
@@ -403,5 +415,234 @@
             flex-direction: column;
             display: flex;
             margin-top: -68px;
+        }
+    }
+        // TABLET VERSION \\
+        @media all and (max-width: 992px) and (min-width: 768px){
+        .img__size--logo{
+            margin-left: 225px;
+            padding: 20px 25px 20px 25px;
+            width: 45%;
+        }
+        .location__background{
+            font-weight: bolder;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: roboto;
+            padding: 10px 0px 15px 0px;
+            background-color: $dark-gray-background;
+        }
+        .location-icon {
+            margin-right: 15px;
+        }
+        .menu__background-flex{
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            padding: 35px 0px 60px 0px;
+            background-color: $gray-background;
+        }
+        .menu__h1-text{
+            font-family: roboto;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .menu__paragraph-text{
+            font-weight: 300;
+            font-family: roboto;
+            padding-bottom: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menu__button:hover {
+            opacity: .8;
+        }
+        .menu__button {
+            margin-left: 190px;
+            font-size: 16px;
+            width: 50%;
+            height: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px 5px gray;
+            border-radius: 20px;
+            border-color: $secondary-pink;
+            background-color: $secondary-pink;
+            color: white;
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        }
+        .menu--h2__section{
+            justify-content: center;
+            display: flex;
+            font-family: roboto;
+            padding: 30px 10px 30px 10px;
+        }
+        .flex-menu__button{
+            padding-bottom: 50px;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        .menu__button-list {
+            box-shadow: $dark-gray-background 5px 5px 5px 5px;
+            background-color: $gray-background;
+            border-color: $gray-background;
+            width: 300px;
+            height: 60px;
+            border: solid 5px #F2F2F2;
+            border-radius: 15px;
+            margin: 15px 0px 10px 0px;
+        }
+        .menu__button-list:hover{
+            border-color: $light-purple;
+            background-color: $light-purple;
+        }
+        .number__position1{
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -122px;
+        }
+        .number__position2{
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -125px;  
+        }
+        .number__position3{
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -65px;  
+        }
+        .button__icons {
+            color: gray;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .button__icons:hover {
+            color: #9356DC;
+        }
+        .button--text{
+            font-weight: bolder;
+            font-family: roboto;
+            margin-left: 25px;
+        }
+        .restuarants--title{
+            justify-content: flex-start;
+            display: flex;
+            font-family: roboto;
+            padding-bottom: 25px;
+        }
+        .restraunt--cards__flexbox {
+            padding: 60px 15px 50px 15px;
+            width: 100%;
+            background-color: $gray-background;
+            flex-direction: column;
+            display: flex;
+        }
+        .menu__cards{
+            text-decoration: none;
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 10px 10px $dark-gray-background;
+            flex-direction: center;
+            width: 100%;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .menu__foodname-text {
+            color: black;
+            font-family: roboto;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .menu__location--text {
+            color: black;
+            font-family: roboto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .menu__img-size{ 
+            border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+        .top-right__new{
+            font-family: roboto;
+            padding: 5px 20px 5px 20px;
+            background-color:  $mint-green;
+            border-radius: 2.5px 2.5px 2.5px 2.5px;
+            font-weight: bolder;
+            color: $dark-mint-green;
+            margin-top: 10px;
+            right: 45px;
+            display: inline-block;
+            position: absolute;
+        }
+        .solid-heart{
+            margin-top: 15px;
+            margin-left: -45px;
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap{
+            right: 25px;
+            position: absolute;
+        }
+        .hearts__icons--wrap:hover .outline-heart {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap:hover .solid-heart {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            margin-left: -45px;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        .footer--text__logo{
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            font-family: shrikhand;
+        }
+        .footer--flexbox{
+            padding: 20px 20px 30px 20px;
+            background-color: rgba(0, 0, 0, 0.815);
+            flex-direction: column;
+            display: flex;
+        }
+        .footer--text{
+            padding-bottom: 7.5px;
+            font-family: roboto;
+            color: white;
+            text-decoration: none;
         }
     }
