@@ -2,7 +2,7 @@
 @import "resets";
     // MOBILE VERSION \\
     @media all and (max-width: 768px) {
-       .logo {
+        .logo {
             box-shadow:  black 10px 0px 10px 0px;
             padding-bottom: 5px;
             justify-content: center;
@@ -25,9 +25,11 @@
             margin-right: 15px;
         }
         .flex-menu__button {
+            align-items: center;
             padding-bottom: 50px;
             justify-content: space-evenly;
             display: flex;
+            flex-direction: column;
         }
         .number__position1{
             font-family: roboto;
@@ -67,8 +69,8 @@
             border-radius: 2.5px 2.5px 2.5px 2.5px;
             font-weight: bolder;
             color: $dark-mint-green;
-            margin-top: 10px;
-            right: 45px;
+            top: 15px;
+            right: 15px;
             display: inline-block;
             position: absolute;
         }
@@ -154,6 +156,7 @@
             width: 100%;
         }
         .menu__cards {
+            position: relative;
             text-decoration: none;
             margin-bottom: 20px;
             box-shadow: 10px 10px 10px 10px $dark-gray-background;
@@ -179,8 +182,6 @@
             margin-left: 20px;
         }
         .solid-heart{
-            margin-top: 15px;
-            margin-left: -45px;
             position: absolute;
             opacity: 0;
             background: linear-gradient(#FF79DA, #9356DC);
@@ -191,7 +192,8 @@
             3s;
         }
         .hearts__icons--wrap{
-            right: 25px;
+            top: 175px;
+            right: 45px;
             position: absolute;
         }
         .hearts__icons--wrap:hover .outline-heart {
@@ -211,9 +213,7 @@
             opacity: 100%;
             transition: opacity
             3s;
-            margin-left: -45px;
             font-size: 25px;
-            margin-top: 15px;
         }
         .footer--text__logo{
             margin-bottom: 15px;
@@ -222,7 +222,7 @@
             font-family: shrikhand;
         }
         .footer--flexbox{
-            padding: 20px 20px 30px 20px;
+            padding: 25px 20px 30px 20px;
             background-color: rgba(0, 0, 0, 0.815);
             flex-direction: column;
             display: flex;
@@ -240,19 +240,21 @@
         }
         .flexbox--wrap{
             background-color: $gray-background;
-            justify-content: flex-start;
+            justify-content: space-between;
+            align-items: center;
             display: flex;
         }
         .arrow{
             padding-left: 25px;
-            margin-top: 25px;
+            margin-top: 8px;
             color: $charcoal;
             text-decoration: none;
             font-size: 25px;
         }
         .img__logo{
+            margin-right: 75px;
             padding: 20px 0px 15px 35px;
-            width: 65%;
+            width: 70%;
         }
         .image__entree{
             object-position: -15px 0;
@@ -291,47 +293,527 @@
             left: 0;
             bottom: 0;
         }
+        .entree__menu--maindish{
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--maindish1{
+            margin-top: 20px;
+            padding: 10px 0px 20px 0px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish1{
+            position: absolute;
+            margin-bottom: -20px;
+            flex: none;
+            width: 100%;
+            margin-bottom: -60px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish{
+            position: absolute;
+            margin-bottom: -20px;
+            flex: none;
+            width: 100%;
+            margin-bottom: -35px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish1:hover{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 55%;
+        }
+        .entree__menu--sidedish:hover{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 55%;
+        }
+        .entree__card0{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 30px 25px 50px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card0{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .entree__card0:hover .animation_holder4--p4{
+            width: 20%;
+            left: 75%;
+        }
         .entree__card{
             font-size: 13px;
             box-shadow: 1px 1px 1px 1px gray;
             border-radius: 15px;
-            padding: 10px 11px 20px 20px;
+            padding: 25px 25px 40px 15px;
             margin-top: 10px;
             background-color: white;
-            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .entree__card2{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 1s;
+        }
+        .entree__card2{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }   
+        .entree__card3{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 1.5s;
+        }
+        .entree__card3{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .entree__card--wrap{
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
-        .entree__menu--maindish{
-            margin-bottom: 5px;
-            font-family: roboto;
+        .cont{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
         }
-        .entree__menu--sidedish{
-            margin-bottom: 5px;
-            font-family: roboto;
+        .text {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            flex: none;
+            transition: 1s;
         }
-        
-        .check-mark:hover{
-           transform: translate(-50px, 0px);
-        //    transform: rotate(360deg);
-        }
-        .check-mark{
-            transition: transform 3s ease-in-out;
-            // visibility: hidden;
-            font-size: 18px;
-            margin-top: -10px;
-            left: 80%;
+        .cont:hover .text {
+            width: 50%;
+            transition: width 1000ms;
+          }
+        .cont:hover .check-mark {
+            transform: rotate(-720deg);
+            transition: transform 1000ms;
+          }
+          .cont:hover .check-mark1 {
+            transform: rotate(-720deg);
+            transition: transform 1000ms;
+          }
+          .money1{
+            margin-top: 60px;
+            vertical-align: baseline;
+            right: -20px;
             position: absolute;
-            padding: 19px;
-            border-radius: 0px 15px 15px 0px;
-            color: white;
-            background-color: $mint-green;
+            font-weight: bold;
+            font-family: roboto;
+            width: 25%;
+            flex: none;
+        }
+        .cont:hover .money1{
+            transition: ease-in .7s;
+            width: 40%;
         }
         .money{
-            margin-right: 30px;
-            margin-top: -20px;
-            justify-content: end;
+            margin-top: 35px;
+            vertical-align: baseline;
+            right: -20px;
+            position: absolute;
+            font-weight: bold;
+            font-family: roboto;
+            width: 25%;
+            flex: none;
+        }
+        .holder1--p4{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 22px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .holder--p4{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 28px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .holder{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 22px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .entree__card:hover .animation_holder{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in;
+            height: 80%;
+        }
+        .entree__card:hover .animation_holder1{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder1{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87.8%;
+        }
+        .animation_holder1--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87.9%;
+        }
+        .entree__card:hover .animation_holder1--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .entree__card:hover .animation_holder2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 81.1%;
+        }
+        .entree__card:hover .animation_holder2--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder2--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 81.2%;
+        }
+        .entree__card:hover .animation_holder3{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder3{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 74.2%;
+        }
+        .entree__card:hover .animation_holder3--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder3--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 74.6%;
+        }
+        .entree__card:hover .animation_holder4--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .entree__card:hover .animation_holder4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 63%;
+        }
+        .animation_holder4--p4{
+            font-size: 2em;
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 63.4%;
+        }
+        .entree__card:hover .animation_holder5--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder5--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 55.4%;
+        }
+        .entree__card:hover .animation_holder5{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder5{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 56.2%;
+        }
+        .entree__card:hover .animation_holder6{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder6{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 49.5%;
+        }
+        .entree__card:hover .animation_holder6--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder6--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48.8%;
+        }
+        .entree__card:hover .animation_holder7{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder7{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 38.3%;
+        }
+        .entree__card:hover .animation_holder7--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder7--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 37.7%;
+        }
+        .entree__card:hover .animation_holder8{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder8{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 31.4%;
+        }
+        .entree__card:hover .animation_holder8--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder8--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.9%;
+        }
+        .entree__card:hover .animation_holder9{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder9{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24.5%;
+        }
+        .entree__card:hover .animation_holder9--p4{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder9--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24.3%;
+        }
+        .cont:hover .money{
+            transition: ease-in .7s;
+            width: 40%;
+        }
+        .check-mark{
+            justify-content: space-evenly;
+            font-size: 2em;
+            transform: rotate(720deg);
+            transition: transform 1000ms;
         }
         .order__now--button{
             margin-bottom: 50px;
@@ -354,6 +836,7 @@
         .img__background{
             background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
         }
+        
         // HTML PAGE 2 EXTRA CSS CLASSES \\
         .flexbox--entree__menu1{
             z-index: 10px;
@@ -377,16 +860,146 @@
             font-size: 25px;
         }
         .entree__card1{
+            align-items: center;
             font-size: 13px;
             box-shadow: 1px 1px 1px 1px gray;
             border-radius: 15px;
-            padding: 10px 11px 20px 20px;
             margin-top: 10px;
-            background-color: white;
-            padding-bottom: 5px;
+            background-color: white; 
             display: flex;
             flex-direction: column;
             font-family: roboto;
+        }
+        .entree__card1{
+            align-items: center;
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            margin-top: 10px;
+            background-color: white; 
+            display: flex;
+            flex-direction: column;
+            font-family: roboto;
+        }
+        .animation_holder1-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 85.2%;
+        }
+        .entree__card:hover .animation_holder1-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder2-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 79%;
+        }
+        .entree__card:hover .animation_holder2-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder3-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73%;
+        }
+        .entree__card:hover .animation_holder3-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder--p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 66.8%;
+        }
+        .entree__card:hover .animation_holder--p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder4-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 56.8%;
+        }
+        .entree__card:hover .animation_holder4-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder5-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 50.6%;
+        }
+        .entree__card:hover .animation_holder5-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder6-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 44.5%;
+        }
+        .entree__card:hover .animation_holder6-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder7-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 34.4%;
+        }
+        .entree__card:hover .animation_holder7-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder8-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 28.2%;
+        }
+        .entree__card:hover .animation_holder8-p2{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder9-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 22.2%;
+        }
+        .entree__card:hover .animation_holder9-p2{
+            width: 20%;
+            left: 75%;
         }
         // HTML PAGE 3 EXTRA CSS CLASSES \\
         .heart--title__page3{
@@ -437,6 +1050,7 @@
             margin-right: 15px;
         }
         .menu__background-flex{
+            align-items: center;
             flex-direction: column;
             display: flex;
             width: 100%;
@@ -459,7 +1073,6 @@
             opacity: .8;
         }
         .menu__button {
-            margin-left: 190px;
             font-size: 16px;
             width: 50%;
             height: 50px;
@@ -482,6 +1095,8 @@
             padding-bottom: 50px;
             justify-content: space-evenly;
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .menu__button-list {
             box-shadow: $dark-gray-background 5px 5px 5px 5px;
@@ -548,6 +1163,7 @@
             display: flex;
         }
         .menu__cards{
+            position: relative;
             text-decoration: none;
             margin-bottom: 20px;
             box-shadow: 10px 10px 10px 10px $dark-gray-background;
@@ -585,8 +1201,8 @@
             border-radius: 2.5px 2.5px 2.5px 2.5px;
             font-weight: bolder;
             color: $dark-mint-green;
-            margin-top: 10px;
-            right: 45px;
+            top: 15px;
+            right: 15px;
             display: inline-block;
             position: absolute;
         }
@@ -603,6 +1219,7 @@
             3s;
         }
         .hearts__icons--wrap{
+            top: 210px;
             right: 25px;
             position: absolute;
         }
@@ -645,4 +1262,1195 @@
             color: white;
             text-decoration: none;
         }
+        // TABLET MENU PAGE 1 \\
+        .main{
+            overflow: hidden;
+            position: relative;
+        }
+        .flexbox--wrap{
+            background-color: $gray-background;
+            justify-content: flex-start;
+            display: flex;
+        }
+        .arrow{
+            padding-left: 25px;
+            margin-top: 35px;
+            color: $charcoal;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        .img__logo{
+            margin-left: 75px;
+            padding: 20px 0px 15px 35px;
+            width: 65%;
+        }
+        .image__entree{
+            object-position: -15px 0;
+            object-fit: cover;
+            width: 112%;
+        }
+        .flexbox--entree__menu{
+            z-index: 10px;
+            position: relative; 
+            margin-top: -40px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .h1__menu{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: shrikhand;
+        }
+        .heart{
+            margin-top: 15px;
+            margin-left: 25px;
+            font-size: 25px;
+        }
+        .entree__menu{
+            font-size: 20px;
+            padding-bottom: 5px;
+            position: relative;
+            padding-top: 25px;
+            font-family: roboto;
+        }
+        .entree__menu::after{
+            content: '';
+            height: 5px;
+            width: 7%;
+            background-color: $mint-green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .entree__menu--maindish{
+            font-size: 20px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish{
+            font-size: 18px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: -40px;
+            font-family: roboto;
+        }
+        .entree__card{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+        }
+        .entree__card--wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .text {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            flex: none;
+            transition: 1s;
+        }
+        .cont:hover .text {
+            width: 50%;
+            transition: width 1000ms;
+          }
+        .cont:hover .check-mark {
+            transform: rotate(-720deg);
+            transition: transform 1000ms;
+          }
+        .money{
+            font-size: 18px;
+            margin-top: 35px;
+            vertical-align: baseline;
+            right: -20px;
+            position: absolute;
+            font-weight: bold;
+            font-family: roboto;
+            width: 25%;
+            flex: none;
+        }
+        .holder{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 22px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .entree__card:hover .animation_holder{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in;
+            height: 75%;
+        }
+        .entree__card:hover .animation_holder1{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder1{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 86.8%;
+        }
+        .entree__card:hover .animation_holder2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80.2%;
+        }
+        .entree__card:hover .animation_holder3{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder3{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.3%;
+        }
+        .entree__card:hover .animation_holder4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 62%;
+        }
+        .entree__card:hover .animation_holder5{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder5{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 55.4%;
+        }
+        .entree__card:hover .animation_holder6{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder6{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48.9%;
+        }
+        .entree__card:hover .animation_holder7{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder7{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 37.5%;
+        }
+        .entree__card:hover .animation_holder8{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder8{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 31%;
+        }
+        .entree__card:hover .animation_holder9{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder9{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24%;
+        }
+        .cont:hover .money{
+            transition: ease-in .7s;
+            width: 40%;
+        }
+        .check-mark{
+            justify-content: space-evenly;
+            font-size: 2em;
+            transform: rotate(720deg);
+            transition: transform 1000ms;
+        }
+        .order__now--button{
+            margin-bottom: 50px;
+            margin-left: 150px;
+            margin-top: 50px;
+            font-size: 20px;
+            width: 60%;
+            height: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            border-radius: 20px;
+            border-color: $secondary-pink;
+            background-color: $secondary-pink;
+            color: white;
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        }
+        .order__now--button:hover{
+            opacity: .8;
+        }
+        .img__background{
+            background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        }
+        // HTML PAGE 2 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu1{
+            z-index: 10px;
+            position: relative; 
+            margin-top: -180px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .image__entree1{
+            object-position: -40px 0px;
+            object-fit: cover;
+            width: 112%;
+        }
+        .heart--title__page2{
+            position: absolute;
+            top: 35px;
+            right: 30px;
+            font-size: 25px;
+        }
+        .entree__card1{
+            align-items: center;
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            margin-top: 10px;
+            background-color: white; 
+            display: flex;
+            flex-direction: column;
+            font-family: roboto;
+        }
+        // HTML PAGE 3 EXTRA CSS CLASSES \\
+        .heart--title__page3{
+            position: absolute;
+            top: 35px;
+            right: 40px;
+            font-size: 25px;
+        }
+        .flexbox--entree__menu2{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -63px;
+        }
+        // HTML PAGE 4 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu3{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -68px;
+        }
     }
+        .loader{
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        background: #000;
+        height: 100vh;
+        width: 100vw;
+        animation: disappear 3.5s forwards;
+        }
+        @keyframes disappear {
+        0%{
+            background-color: #000;
+            z-index: 50;
+            opacity: 1;
+        }
+        10%{
+            background-color: #000;
+            z-index: 40;
+            opacity: 1;
+        }
+        20%{
+            background-color: #000;
+            z-index: 30;
+            opacity: 1;
+        }
+        30%{
+            background-color: #000;
+            z-index: 20;
+            opacity: 0.6;
+        }
+        40%{
+            background-color: #000;
+            z-index: 10;
+            opacity: 0.5;
+        }
+        50%{
+            background-color: #000;
+            z-index: 5;
+            opacity: 0.4;
+        }
+        60%{
+            background-color: #000;
+            z-index: .25;
+            opacity: 0.3;
+        }
+        70%{
+            background-color: #000;
+            z-index: .2;
+            opacity: 0.2;
+        }
+        90% {
+            z-index: 10;
+            opacity: 0.1;
+          }
+        100% {
+            z-index: -10;
+            opacity: 0;
+          }
+    }
+     .loading--spinner{
+        background: #000;
+        z-index: 100;
+        
+   }
+        .loading--spinner{
+       width: 50px;
+       height: 50px;    
+       background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+       border-radius: 50px;
+       border: 10px solid transparent;
+       border-top-color: #9356DC;
+       border-bottom-color: #FF79DA;
+       animation: loading--spinner 5s ease infinite;
+
+       @keyframes loading--spinner {
+           0%{
+               background: #000;
+               opacity: 10;
+               transform: rotate(3turn);
+           }
+           10%{
+               background: #000;
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 9;
+           }
+           20%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 8;
+           }
+           30%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 7;
+           }
+           40%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 6;
+           }
+           50%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 1;
+           }
+           60%{
+               background: none;
+               opacity: 0;
+           }
+           80%{
+            color: none;
+            background-color: transparent;
+            background-color: none;
+            opacity: 0;
+           }
+           100%{
+               color: none;
+               background-color: none;
+               opacity: 0;
+           }
+       }
+   }
+      // DESKTOP VERSION \\
+      @media all and (min-width: 992px) and (max-width: 1800px){
+        .logo {
+            box-shadow:  black 10px 0px 10px 0px;
+            padding-bottom: 5px;
+            justify-content: center;
+            display: flex;
+        }
+        .img__size--logo {
+            padding: 25px 0px 10px 0px;
+        }
+        .location__background {
+            font-weight: bolder;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: roboto;
+            padding: 10px 0px 15px 0px;
+            background-color: $dark-gray-background;
+        }
+        .location-icon {
+            margin-right: 15px;
+        }
+        .flex-menu__button {
+            padding-bottom: 50px;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+        }
+        .number__position1{
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -122px;
+        }
+        .number__position2{ 
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -125px;  
+        }
+        .number__position3{
+            font-family: roboto;
+            color: white;
+            padding: 5px 7.5px 5px 7.5px;
+            border-radius: 50px;
+            background-color: #9356DC;
+            margin-left: -65px;  
+        }
+        .menu__background-flex {
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            padding: 35px 0px 60px 0px;
+            background-color: $gray-background;
+        }
+        .top-right__new{
+            font-family: roboto;
+            padding: 5px 20px 5px 20px;
+            background-color:  $mint-green;
+            border-radius: 2.5px 2.5px 2.5px 2.5px;
+            font-weight: bolder;
+            color: $dark-mint-green;
+            top: 15px;
+            right: 15px;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .menu__paragraph-text {
+            font-weight: 300;
+            font-family: roboto;
+            padding-bottom: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menu__h1-text {
+            font-family: roboto;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        .menu__button:hover {
+            opacity: .8;
+        }
+        .menu__button {
+            font-size: 16px;
+            width: 30%;
+            height: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px 5px gray;
+            border-radius: 20px;
+            border-color: $secondary-pink;
+            background-color: $secondary-pink;
+            color: white;
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        }
+        .menu--h2__section{
+            justify-content: center;
+            display: flex;
+            font-family: roboto;
+            padding: 30px 10px 30px 10px;
+        }
+        .menu__button-list {
+            box-shadow: $dark-gray-background 5px 5px 5px 5px;
+            background-color: $gray-background;
+            border-color: $gray-background;
+            width: 300px;
+            height: 60px;
+            border: solid 5px #F2F2F2;
+            border-radius: 15px;
+            margin: 15px 0px 10px 0px;
+        }
+        .menu__button-list:hover{
+            border-color: $light-purple;
+            background-color: $light-purple;
+        }
+        .button__icons {
+            color: gray;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .button__icons:hover {
+            color: #9356DC;
+        }
+        .button--text{
+            font-weight: bolder;
+            font-family: roboto;
+            margin-left: 25px;
+        }
+        .ol {
+            list-style-type: none;
+        }
+        .restuarants--title{
+            margin-top: -35px;
+            position: absolute;
+            font-family: roboto;
+            padding-bottom: 20px;
+        }
+        .restraunt--cards__flexbox {
+            padding: 60px 15px 50px 15px;
+            width: 100%;
+            background-color: $gray-background;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        .menu__img-size {
+            border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+        .menu__cards {
+            position: relative;
+            margin: 20px 5px 0 20px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 10px 10px $dark-gray-background;
+            flex-direction: center;
+            width: 100%;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .menu__foodname-text {
+            color: black;
+            font-family: roboto;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .menu__location--text {
+            color: black;
+            font-family: roboto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .solid-heart{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap{
+          top: 325px;
+          right: 45px;
+          position: absolute;
+        }
+        .hearts__icons--wrap:hover .outline-heart {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap:hover .solid-heart {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .footer--text__logo{
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            font-family: shrikhand;
+        }
+        .footer--flexbox{
+            padding: 20px 20px 30px 20px;
+            background-color: rgba(0, 0, 0, 0.815);
+            flex-direction: column;
+            display: flex;
+        }
+        .footer--text{
+            padding-bottom: 7.5px;
+            font-family: roboto;
+            color: white;
+           text-decoration: none;
+        }
+        // DESKTOP VERSION PAGE 1 \\
+        .main{
+            overflow: hidden;
+            position: relative;
+        }
+        .flexbox--wrap{
+            background-color: $gray-background;
+            justify-content: flex-start;
+            display: flex;
+        }
+        .arrow{
+            padding-left: 25px;
+            margin-top: 35px;
+            color: $charcoal;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        .img__logo{
+            padding: 20px 0px 15px 35px;
+            width: 30%;
+        }
+        .image__entree{
+            object-position: -15px 0;
+            object-fit: cover;
+            width: 112%;
+        }
+        .flexbox--entree__menu{
+            z-index: 10px;
+            position: relative; 
+            margin-top: -40px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .h1__menu{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: shrikhand;
+        }
+        .heart{
+            margin-top: 15px;
+            margin-left: 25px;
+            font-size: 25px;
+        }
+        .entree__menu{
+            font-size: 20px;
+            padding-bottom: 5px;
+            position: relative;
+            padding-top: 25px;
+            font-family: roboto;
+        }
+        .entree__menu::after{
+            content: '';
+            height: 5px;
+            width: 3%;
+            background-color: $mint-green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .entree__menu--maindish{
+            font-size: 20px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish{
+            font-size: 18px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: -40px;
+            font-family: roboto;
+        }
+        .entree__card{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+        }
+        .entree__card--wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .text {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            flex: none;
+            transition: 1s;
+        }
+        .cont:hover .text {
+            width: 50%;
+            transition: width 1000ms;
+          }
+        .cont:hover .check-mark {
+            transform: rotate(-720deg);
+            transition: transform 1000ms;
+          }
+        .money{
+            font-size: 18px;
+            margin-top: 35px;
+            vertical-align: baseline;
+            right: -20px;
+            position: absolute;
+            font-weight: bold;
+            font-family: roboto;
+            width: 25%;
+            flex: none;
+        }
+        .holder{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 22px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .entree__card:hover .animation_holder{
+            width: 20%;
+            left: 75%;
+        }
+        .animation_holder{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in;
+            height: 75%;
+        }
+        .entree__card:hover .animation_holder1{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder1{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 86.8%;
+        }
+        .entree__card:hover .animation_holder2{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80%;
+        }
+        .entree__card:hover .animation_holder3{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder3{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.3%;
+        }
+        .entree__card:hover .animation_holder4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 62%;
+        }
+        .entree__card:hover .animation_holder5{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder5{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 55.4%;
+        }
+        .entree__card:hover .animation_holder6{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder6{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48.9%;
+        }
+        .entree__card:hover .animation_holder7{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder7{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 37.3%;
+        }
+        .entree__card:hover .animation_holder8{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder8{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.7%;
+        }
+        .entree__card:hover .animation_holder9{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder9{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24%;
+        }
+        .cont:hover .money{
+            transition: ease-in .7s;
+            width: 40%;
+        }
+        .check-mark{
+            justify-content: space-evenly;
+            font-size: 2em;
+            transform: rotate(720deg);
+            transition: transform 1000ms;
+        }
+        .check-mark1{
+            justify-content: space-evenly;
+            font-size: 2em;
+            transform: rotate(720deg);
+            transition: transform 1000ms;
+        }
+        .order__now--button{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-bottom: 50px;
+            margin-left: 370px;
+            margin-top: 50px;
+            font-size: 20px;
+            width: 50%;
+            height: 50px;
+            font-family: Roboto;
+            font-weight: bold;
+            border-radius: 20px;
+            border-color: $secondary-pink;
+            background-color: $secondary-pink;
+            color: white;
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        }
+        .order__now--button:hover{
+            opacity: .8;
+        }
+        .img__background{
+            background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        }
+        // HTML PAGE 2 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu1{
+            z-index: 10px;
+            position: relative; 
+            margin-top: -180px;
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+        }
+        .image__entree1{
+            object-position: -40px 0px;
+            object-fit: cover;
+            width: 112%;
+        }
+        .heart--title__page2{
+            position: absolute;
+            top: 35px;
+            right: 30px;
+            font-size: 25px;
+        }
+        
+        // HTML PAGE 3 EXTRA CSS CLASSES \\
+        .heart--title__page3{
+            position: absolute;
+            top: 35px;
+            right: 40px;
+            font-size: 25px;
+        }
+        .flexbox--entree__menu2{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -63px;
+        }
+        // HTML PAGE 4 EXTRA CSS CLASSES \\
+        .flexbox--entree__menu3{
+            z-index: 10px;
+            position: relative; 
+            border-radius: 40px 40px 0px 0px;
+            background-color: $gray-background;
+            padding: 25px 25px 60px 25px;
+            flex-direction: column;
+            display: flex;
+            margin-top: -68px;
+        }
+    }
+    .loader{
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        background: #000;
+        height: 100vh;
+        width: 100vw;
+        animation: disappear 3.5s forwards;
+    }
+    @keyframes disappear {
+        0%{
+            background-color: #000;
+            z-index: 50;
+            opacity: 1;
+        }
+        10%{
+            background-color: #000;
+            z-index: 40;
+            opacity: 1;
+        }
+        20%{
+            background-color: #000;
+            z-index: 30;
+            opacity: 1;
+        }
+        30%{
+            background-color: #000;
+            z-index: 20;
+            opacity: 0.6;
+        }
+        40%{
+            background-color: #000;
+            z-index: 10;
+            opacity: 0.5;
+        }
+        50%{
+            background-color: #000;
+            z-index: 5;
+            opacity: 0.4;
+        }
+        60%{
+            background-color: #000;
+            z-index: .25;
+            opacity: 0.3;
+        }
+        70%{
+            background-color: #000;
+            z-index: .2;
+            opacity: 0.2;
+        }
+        90% {
+            z-index: 10;
+            opacity: 0.1;
+          }
+        100% {
+            z-index: -10;
+            opacity: 0;
+          }
+    }
+    .loading--spinner{
+        background: #000;
+        z-index: 100;
+        
+   }
+   .loading--spinner{
+       width: 50px;
+       height: 50px;    
+       background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+       border-radius: 50px;
+       border: 10px solid transparent;
+       border-top-color: #9356DC;
+       border-bottom-color: #FF79DA;
+       animation: loading--spinner 5s ease infinite;
+
+       @keyframes loading--spinner {
+           0%{
+               background: #000;
+               opacity: 10;
+               transform: rotate(3turn);
+           }
+           10%{
+               background: #000;
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 9;
+           }
+           20%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 8;
+           }
+           30%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 7;
+           }
+           40%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 6;
+           }
+           50%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 1;
+           }
+           60%{
+               background: none;
+               opacity: 0;
+           }
+           80%{
+            color: none;
+            background-color: transparent;
+            background-color: none;
+            opacity: 0;
+           }
+           100%{
+               color: none;
+               background-color: none;
+               opacity: 0;
+           }
+        }
+      }
