@@ -293,6 +293,74 @@
             left: 0;
             bottom: 0;
         }
+        .solid-heart-p1{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1{
+            top: 35px;
+            right: 50px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p1:hover .outline-heart-p1 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p1{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .solid-heart-p2{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2{
+            top: 35px;
+            right: 75px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p2:hover .outline-heart-p2 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p2{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
         .entree__menu--maindish{
             position: absolute;
             flex: none;
@@ -375,7 +443,11 @@
         }
         .entree__card0:hover .animation_holder4--p4{
             width: 20%;
-            left: 75%;
+            left: 77%;
+        }
+        .entree__card0 .animation_holder4--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card{
             font-size: 13px;
@@ -502,21 +574,22 @@
             align-items: center;
             width: 80%;
             flex: none;
-            transition: 1s;
+            transition:  width 1.5s;
         }
         .cont:hover .text {
             width: 50%;
-            transition: width 1000ms;
-          }
+            transition: width 3s;
+        }
         .cont:hover .check-mark {
-            transform: rotate(-720deg);
+            transform: rotate(360deg);
+            transition: transform 1s;
+        }
+        .cont:hover .check-mark1 {
+            transform: rotate(360deg);
             transition: transform 1000ms;
-          }
-          .cont:hover .check-mark1 {
-            transform: rotate(-720deg);
-            transition: transform 1000ms;
-          }
-          .money1{
+        }
+        .money1{
+          
             margin-top: 60px;
             vertical-align: baseline;
             right: -20px;
@@ -576,11 +649,12 @@
             align-items: center;
             flex: none;
         }
-        .entree__card:hover .animation_holder{
+        .entree__card .animation_holder1{
             width: 20%;
-            left: 75%;
+            transition: all 1s ease-out;
         }
         .animation_holder{
+            transition: width 3s;
             position: absolute;
             bottom: 5px;
             left: 100%;
@@ -612,6 +686,10 @@
             width: 20%;
             left: 75%;
         }
+        .entree__card .animation_holder1--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder2{
             width: 20%;
             left: 75%;
@@ -623,6 +701,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 81.1%;
+        }
+        .entree__card .animation_holder2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder2--p4{
             width: 20%;
@@ -636,6 +718,10 @@
             transition: 1s ease-in-out;
             height: 81.2%;
         }
+        .entree__card .animation_holder2--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder3{
             width: 20%;
             left: 75%;
@@ -648,6 +734,10 @@
             transition: 1s ease-in-out;
             height: 74.2%;
         }
+        .entree__card .animation_holder3{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder3--p4{
             width: 20%;
             left: 75%;
@@ -659,6 +749,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 74.6%;
+        }
+        .entree__card .animation_holder3--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder4--p4{
             width: 20%;
@@ -675,6 +769,10 @@
             overflow: hidden;
             transition: 1s ease-in-out;
             height: 63%;
+        }
+        .entree__card .animation_holder4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .animation_holder4--p4{
             font-size: 2em;
@@ -697,6 +795,10 @@
             transition: 1s ease-in-out;
             height: 55.4%;
         }
+        .entree__card .animation_holder5--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder5{
             width: 20%;
             left: 75%;
@@ -708,6 +810,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 56.2%;
+        }
+        .entree__card .animation_holder5{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder6{
             width: 20%;
@@ -721,6 +827,10 @@
             transition: 1s ease-in-out;
             height: 49.5%;
         }
+        .entree__card .animation_holder6{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder6--p4{
             width: 20%;
             left: 75%;
@@ -732,6 +842,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 48.8%;
+        }
+        .entree__card .animation_holder6--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder7{
             width: 20%;
@@ -745,6 +859,10 @@
             transition: 1s ease-in-out;
             height: 38.3%;
         }
+        .entree__card .animation_holder7{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder7--p4{
             width: 20%;
             left: 75%;
@@ -756,6 +874,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 37.7%;
+        }
+        .entree__card .animation_holder7--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder8{
             width: 20%;
@@ -769,6 +891,10 @@
             transition: 1s ease-in-out;
             height: 31.4%;
         }
+        .entree__card .animation_holder8{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder8--p4{
             width: 20%;
             left: 75%;
@@ -780,6 +906,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 30.9%;
+        }
+        .entree__card .animation_holder8--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder9{
             width: 20%;
@@ -793,9 +923,17 @@
             transition: 1s ease-in-out;
             height: 24.5%;
         }
+        .entree__card .animation_holder9{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder9--p4{
             width: 20%;
             left: 75%;
+        }
+        .entree__card .animation_holder9--p4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .animation_holder9--p4{
             position: absolute;
@@ -806,14 +944,16 @@
             height: 24.3%;
         }
         .cont:hover .money{
-            transition: ease-in .7s;
             width: 40%;
+            transition: all .7s ease-in;
+        }
+        .cont .money{
+            width: 25%;
+            transition: all 1s ease-out;
         }
         .check-mark{
             justify-content: space-evenly;
             font-size: 2em;
-            transform: rotate(720deg);
-            transition: transform 1000ms;
         }
         .order__now--button{
             margin-bottom: 50px;
@@ -837,7 +977,7 @@
             background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
         }
         
-        // HTML PAGE 2 EXTRA CSS CLASSES \\
+        // HTML PAGE 2 EXTRA CSS CLASSES MOBILE \\
         .flexbox--entree__menu1{
             z-index: 10px;
             position: relative; 
@@ -893,6 +1033,10 @@
             width: 20%;
             left: 75%;
         }
+        .entree__card .animation_holder1-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .animation_holder2-p2{
             position: absolute;
             bottom: 5px;
@@ -904,6 +1048,10 @@
         .entree__card:hover .animation_holder2-p2{
             width: 20%;
             left: 75%;
+        }
+        .entree__card .animation_holder2-p2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .animation_holder3-p2{
             position: absolute;
@@ -941,6 +1089,10 @@
             width: 20%;
             left: 75%;
         }
+        .entree__card .animation_holder4-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .animation_holder5-p2{
             position: absolute;
             bottom: 5px;
@@ -952,6 +1104,10 @@
         .entree__card:hover .animation_holder5-p2{
             width: 20%;
             left: 75%;
+        }
+        .entree__card .animation_holder5-p2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .animation_holder6-p2{
             position: absolute;
@@ -965,6 +1121,10 @@
             width: 20%;
             left: 75%;
         }
+        .entree__card .animation_holder6-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .animation_holder7-p2{
             position: absolute;
             bottom: 5px;
@@ -976,6 +1136,10 @@
         .entree__card:hover .animation_holder7-p2{
             width: 20%;
             left: 75%;
+        }
+        .entree__card .animation_holder7-p2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .animation_holder8-p2{
             position: absolute;
@@ -989,6 +1153,10 @@
             width: 20%;
             left: 75%;
         }
+        .entree__card .animation_holder8-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .animation_holder9-p2{
             position: absolute;
             bottom: 5px;
@@ -1000,6 +1168,10 @@
         .entree__card:hover .animation_holder9-p2{
             width: 20%;
             left: 75%;
+        }
+        .entree__card .animation_holder9-p2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         // HTML PAGE 3 EXTRA CSS CLASSES \\
         .heart--title__page3{
@@ -1033,7 +1205,6 @@
         // TABLET VERSION \\
         @media all and (max-width: 992px) and (min-width: 768px){
         .img__size--logo{
-            margin-left: 225px;
             padding: 20px 25px 20px 25px;
             width: 45%;
         }
@@ -1086,6 +1257,7 @@
             background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
         }
         .menu--h2__section{
+            margin-left: -15px;
             justify-content: center;
             display: flex;
             font-family: roboto;
@@ -1206,6 +1378,73 @@
             display: inline-block;
             position: absolute;
         }
+        .solid-heart-p1{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1{
+            top: 35px;
+            right: 175px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p1:hover .outline-heart-p1 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p1{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .solid-heart-p2{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2{
+            top: 35px;
+            right: 175px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p2:hover .outline-heart-p2 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p2{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity 3s;
+            font-size: 25px;
+        }
         .solid-heart{
             margin-top: 15px;
             margin-left: -45px;
@@ -1284,6 +1523,10 @@
             padding: 20px 0px 15px 35px;
             width: 65%;
         }
+        .logo{
+            justify-content: center;
+            display: flex;
+        }
         .image__entree{
             object-position: -15px 0;
             object-fit: cover;
@@ -1326,6 +1569,75 @@
             left: 0;
             bottom: 0;
         }
+      
+        .solid-heart-p4{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p4{
+            top: 35px;
+            right: 175px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p4:hover .outline-heart-p4 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p4{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .solid-heart-p2{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2{
+            top: 40px;
+            right: 175px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p2:hover .outline-heart-p2 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p2{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
         .entree__menu--maindish{
             font-size: 20px;
             position: absolute;
@@ -1364,6 +1676,86 @@
             justify-content: space-between;
             overflow: hidden;
         }
+        .entree__card0{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 30px 25px 50px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card0{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .entree__card0:hover .animation_holder4--p4{
+            width: 20%;
+            left: 77%;
+        }
+        .entree__card0 .animation_holder4--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
         .text {
             font-size: 13px;
             display: flex;
@@ -1375,11 +1767,11 @@
         .cont:hover .text {
             width: 50%;
             transition: width 1000ms;
-          }
+        }
         .cont:hover .check-mark {
-            transform: rotate(-720deg);
+            transform: rotate(360deg);
             transition: transform 1000ms;
-          }
+        }
         .money{
             font-size: 18px;
             margin-top: 35px;
@@ -1427,6 +1819,10 @@
             transition: 1s ease-in-out;
             height: 86.8%;
         }
+        .entree__card .animation_holder1{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder2{
             width: 20%;
             left: 77.2%;
@@ -1438,6 +1834,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 80.2%;
+        }
+        .entree__card .animation_holder2{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder3{
             width: 20%;
@@ -1451,6 +1851,10 @@
             transition: 1s ease-in-out;
             height: 73.3%;
         }
+        .entree__card .animation_holder3{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder4{
             width: 20%;
             left: 77.2%;
@@ -1462,6 +1866,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 62%;
+        }
+        .entree__card .animation_holder4{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder5{
             width: 20%;
@@ -1475,6 +1883,10 @@
             transition: 1s ease-in-out;
             height: 55.4%;
         }
+        .entree__card .animation_holder5{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder6{
             width: 20%;
             left: 77.2%;
@@ -1486,6 +1898,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 48.9%;
+        }
+        .entree__card .animation_holder6{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder7{
             width: 20%;
@@ -1499,6 +1915,10 @@
             transition: 1s ease-in-out;
             height: 37.5%;
         }
+        .entree__card .animation_holder7{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .entree__card:hover .animation_holder8{
             width: 20%;
             left: 77.2%;
@@ -1510,6 +1930,10 @@
             overflow:hidden;
             transition: 1s ease-in-out;
             height: 31%;
+        }
+        .entree__card .animation_holder8{
+            width: 20%;
+            transition: all 1s ease-out;
         }
         .entree__card:hover .animation_holder9{
             width: 20%;
@@ -1523,15 +1947,21 @@
             transition: 1s ease-in-out;
             height: 24%;
         }
+        .entree__card .animation_holder9{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .cont:hover .money{
             transition: ease-in .7s;
             width: 40%;
         }
+        .cont .money{
+            width: 25%;
+            transition: all 1s ease-out;
+        }
         .check-mark{
             justify-content: space-evenly;
             font-size: 2em;
-            transform: rotate(720deg);
-            transition: transform 1000ms;
         }
         .order__now--button{
             margin-bottom: 50px;
@@ -1554,7 +1984,7 @@
         .img__background{
             background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
         }
-        // HTML PAGE 2 EXTRA CSS CLASSES \\
+        // HTML PAGE 2 EXTRA CSS CLASSES TABLET \\
         .flexbox--entree__menu1{
             z-index: 10px;
             position: relative; 
@@ -1587,6 +2017,166 @@
             flex-direction: column;
             font-family: roboto;
         }
+        .animation_holder1-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87.5%;
+        }
+        .entree__card:hover .animation_holder1-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder1-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder2-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 81.3%;
+        }
+        .entree__card:hover .animation_holder2-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder2-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder3-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 75.2%;
+        }
+        .entree__card:hover .animation_holder3-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder3-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder--p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 68.8%;
+        }
+        .entree__card:hover .animation_holder--p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder--p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder4-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 58.2%;
+        }
+        .entree__card:hover .animation_holder4-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder4-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder5-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 52%;
+        }
+        .entree__card:hover .animation_holder5-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder5-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder6-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 45.8%;
+        }
+        .entree__card:hover .animation_holder6-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder6-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder7-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 35%;
+        }
+        .entree__card:hover .animation_holder7-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder7-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder8-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 28.8%;
+        }
+        .entree__card:hover .animation_holder8-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder8-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder9-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 22.6%;
+        }
+        .entree__card:hover .animation_holder9-p2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder9-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         // HTML PAGE 3 EXTRA CSS CLASSES \\
         .heart--title__page3{
             position: absolute;
@@ -1605,6 +2195,63 @@
             margin-top: -63px;
         }
         // HTML PAGE 4 EXTRA CSS CLASSES \\
+        .entree__menu--maindish{
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--maindish1{
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 10px 0px 20px 0px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish1{
+            font-size: 18px;
+            position: absolute;
+            margin-bottom: -20px;
+            flex: none;
+            width: 100%;
+            margin-bottom: -60px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish{
+            position: absolute;
+            margin-bottom: -20px;
+            flex: none;
+            width: 100%;
+            margin-bottom: -35px;
+            font-family: roboto;
+        }
+        .money1{
+            font-size: 18px;
+            margin-top: 60px;
+            vertical-align: baseline;
+            right: -20px;
+            position: absolute;
+            font-weight: bold;
+            font-family: roboto;
+            width: 25%;
+            flex: none;
+        }
+        .entree__menu--sidedish1:hover{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 55%;
+        }
+        .entree__menu--sidedish:hover{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 55%;
+        }
         .flexbox--entree__menu3{
             z-index: 10px;
             position: relative; 
@@ -1614,6 +2261,275 @@
             flex-direction: column;
             display: flex;
             margin-top: -68px;
+        }
+        .animation_holder1--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87%;
+        }
+        .entree__card:hover .animation_holder1--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder1--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder2{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80.1%;
+        }
+        .entree__card .animation_holder2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder2--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder2--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80.2%;
+        }
+        .entree__card .animation_holder2--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder3{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder3{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.6%;
+        }
+        .entree__card .animation_holder3{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder3--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder3--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.6%;
+        }
+        .entree__card .animation_holder3--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder4--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card:hover .animation_holder4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 62%;
+        }
+        .entree__card .animation_holder4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder4--p4{
+            font-size: 2em;
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 62.5%;
+        }
+        .entree__card:hover .animation_holder5--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder5--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 54.5%;
+        }
+        .entree__card .animation_holder5--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder5{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder5{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 55.2%;
+        }
+        .entree__card .animation_holder5{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder6{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder6{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48.7%;
+        }
+        .entree__card .animation_holder6{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder6--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder6--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48%;
+        }
+        .entree__card .animation_holder6--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder7{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder7{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 37.3%;
+        }
+        .entree__card .animation_holder7{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder7--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder7--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 36.8%;
+        }
+        .entree__card .animation_holder7--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder8{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder8{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.8%;
+        }
+        .entree__card .animation_holder8{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder8--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder8--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.3%;
+        }
+        .entree__card .animation_holder8--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder9{
+            width: 20%;
+            left: 77.2%;
+        }
+        .animation_holder9{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24%;
+        }
+        .entree__card .animation_holder9{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder9--p4{
+            width: 20%;
+            left: 77.2%;
+        }
+        .entree__card .animation_holder9--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder9--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 23.8%;
         }
     }
         .loader{
@@ -1676,12 +2592,12 @@
             z-index: -10;
             opacity: 0;
           }
-    }
-     .loading--spinner{
+        }
+        .loading--spinner{
         background: #000;
         z-index: 100;
         
-   }
+        }
         .loading--spinner{
        width: 50px;
        height: 50px;    
@@ -1739,7 +2655,9 @@
                background-color: none;
                opacity: 0;
            }
+           
        }
+       
    }
       // DESKTOP VERSION \\
       @media all and (min-width: 992px) and (max-width: 1800px){
@@ -1978,6 +2896,86 @@
            text-decoration: none;
         }
         // DESKTOP VERSION PAGE 1 \\
+        .entree__card0{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 30px 25px 50px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card0{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .entree__card0:hover .animation_holder4--p4{
+            width: 20%;
+            left: 77%;
+        }
+        .entree__card0 .animation_holder4--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 25px 25px 40px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .entree__card{
+            @keyframes reappear {
+                0% {
+                    margin-top: 20px;
+                    opacity: 0;
+                }
+                20% {
+                    opacity: .2;
+                }
+                40%{
+                    opacity: .5;
+                }
+                60%{
+                    opacity: .7;
+                }
+                80%{
+                    opacity: .9;
+                }
+               100%{
+                    opacity: 1;
+                }
+            }
+        }
         .main{
             overflow: hidden;
             position: relative;
@@ -2040,6 +3038,142 @@
             left: 0;
             bottom: 0;
         }
+        .solid-heart-p1{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 35px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1{
+            top: 35px;
+            right: 700px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p1:hover .outline-heart-p1 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p1{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 35px;
+        }
+        .solid-heart-p2{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2{
+            top: 40px;
+            right: 650px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p2:hover .outline-heart-p2 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p2{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .solid-heart-p3{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p3{
+            top: 40px;
+            right: 780px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p3:hover .outline-heart-p3{
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p3{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
+        .solid-heart-p4{
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(#FF79DA, #9356DC);
+            font-size: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p4{
+            top: 40px;
+            right: 705px;
+            position: absolute;
+        }
+        .hearts__icons--wrap-p4:hover .outline-heart-p4 {
+            opacity: 0;
+            transition: opacity
+            3s;
+        }
+        .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 100%;
+            background: linear-gradient(to bottom #FF79DA, #9356DC);
+        }
+        .outline-heart-p4{
+            color: black;
+            position: absolute;
+            opacity: 100%;
+            transition: opacity
+            3s;
+            font-size: 25px;
+        }
         .entree__menu--maindish{
             font-size: 20px;
             position: absolute;
@@ -2067,6 +3201,77 @@
             align-items: center;
             font-family: roboto;
         }
+        .entree__card0:hover .animation_holder4--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card0 .animation_holder4--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .cont:hover .check-mark1 {
+            transform: rotate(360deg);
+            transition: transform 1000ms;
+        }
+        .entree__menu--maindish1{
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 10px 0px 20px 0px;
+            position: absolute;
+            flex: none;
+            width: 100%;
+            margin-bottom: 5px;
+            font-family: roboto;
+        }
+        .entree__menu--sidedish1{
+            font-size: 18px;
+            position: absolute;
+            margin-bottom: -20px;
+            flex: none;
+            width: 100%;
+            margin-bottom: -60px;
+            font-family: roboto;
+        }
+        .money1{
+            font-size: 18px;
+            margin-top: 60px;
+            vertical-align: baseline;
+            right: -20px;
+            position: absolute;
+            font-weight: bold;
+            font-family: roboto;
+            width: 20%;
+            flex: none;
+        }
+        .cont:hover .money1{
+            transition: ease-in .7s;
+            width: 40%;
+        }
+        .entree__card0{
+            font-size: 13px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 15px;
+            padding: 30px 25px 50px 15px;
+            margin-top: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
+        }
+        .holder--p4{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 28px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
         .entree__card--wrap{
             display: flex;
             flex-direction: column;
@@ -2091,9 +3296,217 @@
             transition: width 1000ms;
           }
         .cont:hover .check-mark {
-            transform: rotate(-720deg);
-            transition: transform 1000ms;
+            transform: rotate(360deg);
+            transition: transform 1.8s;
           }
+        .cont .animation_holder1{
+            width: 25%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder1-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder2-p2{
+            width: 20%;
+            left:   90%;
+        }
+        .entree__card .animation_holder3{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder3-p2{
+            width: 20%;
+            left: 90%;
+        }
+        .entree__card .animation_holder4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card .animation_holder5{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card .animation_holder6{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card .animation_holder7{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card .animation_holder8{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card .animation_holder9{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder1-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87.5%;
+        }
+        .entree__card:hover .animation_holder1-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder1-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder2-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 81.3%;
+        }
+        .entree__card:hover .animation_holder2-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder2-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder3-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 75.2%;
+        }
+        .entree__card:hover .animation_holder3-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder3-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder--p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 68.8%;
+        }
+        .entree__card:hover .animation_holder--p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder--p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder4-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 58.2%;
+        }
+        .entree__card:hover .animation_holder4-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder4-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder5-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 52%;
+        }
+        .entree__card:hover .animation_holder5-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder5-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder6-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 45.8%;
+        }
+        .entree__card:hover .animation_holder6-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder6-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder7-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 35%;
+        }
+        .entree__card:hover .animation_holder7-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder7-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder8-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 28.8%;
+        }
+        .entree__card:hover .animation_holder8-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder8-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder9-p2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 22.6%;
+        }
+        .entree__card:hover .animation_holder9-p2{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder9-p2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
         .money{
             font-size: 18px;
             margin-top: 35px;
@@ -2126,7 +3539,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in;
+            transition: 1.2s ease-in;
             height: 75%;
         }
         .entree__card:hover .animation_holder1{
@@ -2138,7 +3551,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 86.8%;
         }
         .entree__card:hover .animation_holder2{
@@ -2150,7 +3563,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 80%;
         }
         .entree__card:hover .animation_holder3{
@@ -2162,7 +3575,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 73.3%;
         }
         .entree__card:hover .animation_holder4{
@@ -2174,7 +3587,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 62%;
         }
         .entree__card:hover .animation_holder5{
@@ -2186,7 +3599,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 55.4%;
         }
         .entree__card:hover .animation_holder6{
@@ -2198,7 +3611,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 48.9%;
         }
         .entree__card:hover .animation_holder7{
@@ -2210,7 +3623,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 37.3%;
         }
         .entree__card:hover .animation_holder8{
@@ -2222,7 +3635,7 @@
             bottom: 5px;
             left: 100%;
             overflow:hidden;
-            transition: 1s ease-in-out;
+            transition: 1.2s ease-in-out;
             height: 30.7%;
         }
         .entree__card:hover .animation_holder9{
@@ -2238,20 +3651,20 @@
             height: 24%;
         }
         .cont:hover .money{
-            transition: ease-in .7s;
+            transition: ease-in 1s;
             width: 40%;
+        }
+        .cont .money{
+            transition: ease-out 1s;
+            width: 20%;
         }
         .check-mark{
             justify-content: space-evenly;
             font-size: 2em;
-            transform: rotate(720deg);
-            transition: transform 1000ms;
         }
         .check-mark1{
             justify-content: space-evenly;
-            font-size: 2em;
-            transform: rotate(720deg);
-            transition: transform 1000ms;
+            font-size: 25px;
         }
         .order__now--button{
             justify-content: center;
@@ -2293,13 +3706,6 @@
             object-fit: cover;
             width: 112%;
         }
-        .heart--title__page2{
-            position: absolute;
-            top: 35px;
-            right: 30px;
-            font-size: 25px;
-        }
-        
         // HTML PAGE 3 EXTRA CSS CLASSES \\
         .heart--title__page3{
             position: absolute;
@@ -2318,6 +3724,288 @@
             margin-top: -63px;
         }
         // HTML PAGE 4 EXTRA CSS CLASSES \\
+        
+        .holder1--p4{
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            padding: 22px;
+            background-color: $mint-green;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+        .animation_holder1--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 87%;
+        }
+        .entree__card:hover .animation_holder1--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder1--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder2{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder2{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80.1%;
+        }
+        .entree__card .animation_holder2{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder2--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder2--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 80.2%;
+        }
+        .entree__card .animation_holder2--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder3{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder3{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.6%;
+        }
+        .entree__card .animation_holder3{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder3--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder3--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 73.6%;
+        }
+        .entree__card .animation_holder3--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder4--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card:hover .animation_holder4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 62%;
+        }
+        .entree__card .animation_holder4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder4--p4{
+            font-size: 2em;
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+            height: 62.3%;
+        }
+        .entree__card:hover .animation_holder5--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder5--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 54.5%;
+        }
+        .entree__card .animation_holder5--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder5{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder5{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 55.2%;
+        }
+        .entree__card .animation_holder5{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder6{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder6{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48.7%;
+        }
+        .entree__card .animation_holder6{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder6--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder6--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 48%;
+        }
+        .entree__card .animation_holder6--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder7{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder7{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 37.3%;
+        }
+        .entree__card .animation_holder7{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder7--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder7--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 36.8%;
+        }
+        .entree__card .animation_holder7--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder8{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder8{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.8%;
+        }
+        .entree__card .animation_holder8{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder8--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder8--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 30.3%;
+        }
+        .entree__card .animation_holder8--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder9{
+            width: 20%;
+            left: 79%;
+        }
+        .animation_holder9{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 24%;
+        }
+        .entree__card .animation_holder9{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .entree__card:hover .animation_holder9--p4{
+            width: 20%;
+            left: 79%;
+        }
+        .entree__card .animation_holder9--p4{
+            width: 20%;
+            transition: all 1s ease-out;
+        }
+        .animation_holder9--p4{
+            position: absolute;
+            bottom: 5px;
+            left: 100%;
+            overflow:hidden;
+            transition: 1s ease-in-out;
+            height: 23.8%;
+        }
         .flexbox--entree__menu3{
             z-index: 10px;
             position: relative; 
