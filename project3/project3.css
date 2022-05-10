@@ -208,10 +208,6 @@ body {
     margin-bottom: 20px;
     -webkit-box-shadow: 10px 10px 10px 10px lightgray;
             box-shadow: 10px 10px 10px 10px lightgray;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
     width: 100%;
     border-radius: 15px;
     background-color: white;
@@ -261,8 +257,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart {
     color: black;
@@ -331,7 +327,7 @@ body {
     width: 112%;
   }
   .flexbox--entree__menu {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -40px;
     border-radius: 40px 40px 0px 0px;
@@ -392,8 +388,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -428,10 +424,46 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p2 {
+    color: black;
+    position: absolute;
+    opacity: 100%;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+    font-size: 25px;
+  }
+  .solid-heart-p3 {
+    position: absolute;
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+  }
+  .hearts__icons--wrap-p3 {
+    top: 35px;
+    right: 75px;
+    position: absolute;
+  }
+  .hearts__icons--wrap-p3:hover .outline-heart-p3 {
+    opacity: 0;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+  }
+  .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  }
+  .outline-heart-p3 {
     color: black;
     position: absolute;
     opacity: 100%;
@@ -1202,7 +1234,7 @@ body {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   }
   .flexbox--entree__menu1 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -180px;
     border-radius: 40px 40px 0px 0px;
@@ -1444,7 +1476,7 @@ body {
     font-size: 25px;
   }
   .flexbox--entree__menu2 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -1458,8 +1490,44 @@ body {
     display: flex;
     margin-top: -63px;
   }
+  .solid-heart-p4 {
+    position: absolute;
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-size: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+  }
+  .hearts__icons--wrap-p4 {
+    top: 35px;
+    right: 75px;
+    position: absolute;
+  }
+  .hearts__icons--wrap-p4:hover .outline-heart-p4 {
+    opacity: 0;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+  }
+  .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  }
+  .outline-heart-p4 {
+    color: black;
+    position: absolute;
+    opacity: 100%;
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+    font-size: 25px;
+  }
   .flexbox--entree__menu3 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -1527,6 +1595,7 @@ body {
     opacity: .8;
   }
   .menu__button {
+    margin-right: 50px;
     font-size: 16px;
     width: 50%;
     height: 50px;
@@ -1648,10 +1717,6 @@ body {
     margin-bottom: 20px;
     -webkit-box-shadow: 10px 10px 10px 10px lightgray;
             box-shadow: 10px 10px 10px 10px lightgray;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
     width: 100%;
     border-radius: 15px;
     background-color: white;
@@ -1720,8 +1785,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -1756,8 +1821,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -1794,8 +1859,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart {
     color: black;
@@ -1871,7 +1936,7 @@ body {
     width: 112%;
   }
   .flexbox--entree__menu {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -40px;
     border-radius: 40px 40px 0px 0px;
@@ -1941,8 +2006,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p4 {
     color: black;
@@ -1977,8 +2042,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -2433,7 +2498,7 @@ body {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   }
   .flexbox--entree__menu1 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -180px;
     border-radius: 40px 40px 0px 0px;
@@ -2666,7 +2731,7 @@ body {
     font-size: 25px;
   }
   .flexbox--entree__menu2 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -2748,7 +2813,7 @@ body {
     width: 55%;
   }
   .flexbox--entree__menu3 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -3064,264 +3129,247 @@ body {
     transition: 1s ease-in-out;
     height: 23.8%;
   }
-}
-
-.loader {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  background: #000;
-  height: 100vh;
-  width: 100vw;
-  -webkit-animation: disappear 3.5s forwards;
-          animation: disappear 3.5s forwards;
-}
-
-@-webkit-keyframes disappear {
-  0% {
-    background-color: #000;
-    z-index: 50;
-    opacity: 1;
-  }
-  10% {
-    background-color: #000;
-    z-index: 40;
-    opacity: 1;
-  }
-  20% {
-    background-color: #000;
-    z-index: 30;
-    opacity: 1;
-  }
-  30% {
-    background-color: #000;
-    z-index: 20;
-    opacity: 0.6;
-  }
-  40% {
-    background-color: #000;
-    z-index: 10;
-    opacity: 0.5;
-  }
-  50% {
-    background-color: #000;
-    z-index: 5;
-    opacity: 0.4;
-  }
-  60% {
-    background-color: #000;
-    z-index: .25;
-    opacity: 0.3;
-  }
-  70% {
-    background-color: #000;
-    z-index: .2;
-    opacity: 0.2;
-  }
-  90% {
-    z-index: 10;
-    opacity: 0.1;
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0% {
-    background-color: #000;
-    z-index: 50;
-    opacity: 1;
-  }
-  10% {
-    background-color: #000;
-    z-index: 40;
-    opacity: 1;
-  }
-  20% {
-    background-color: #000;
-    z-index: 30;
-    opacity: 1;
-  }
-  30% {
-    background-color: #000;
-    z-index: 20;
-    opacity: 0.6;
-  }
-  40% {
-    background-color: #000;
-    z-index: 10;
-    opacity: 0.5;
-  }
-  50% {
-    background-color: #000;
-    z-index: 5;
-    opacity: 0.4;
-  }
-  60% {
-    background-color: #000;
-    z-index: .25;
-    opacity: 0.3;
-  }
-  70% {
-    background-color: #000;
-    z-index: .2;
-    opacity: 0.2;
-  }
-  90% {
-    z-index: 10;
-    opacity: 0.1;
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-  }
-}
-
-.loading--spinner {
-  background: #000;
-  z-index: 100;
-}
-
-.loading--spinner {
-  width: 50px;
-  height: 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  border-radius: 50px;
-  border: 10px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #FF79DA;
-  -webkit-animation: loading--spinner 5s ease infinite;
-          animation: loading--spinner 5s ease infinite;
-}
-
-@-webkit-keyframes loading--spinner {
-  0% {
+  .loader {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 1;
     background: #000;
-    opacity: 10;
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
+    height: 100vh;
+    width: 100vw;
+    -webkit-animation: disappear 3.5s forwards;
+            animation: disappear 3.5s forwards;
   }
-  10% {
+  @-webkit-keyframes disappear {
+    0% {
+      background-color: #000;
+      z-index: 50;
+      opacity: 1;
+    }
+    10% {
+      background-color: #000;
+      z-index: 40;
+      opacity: 1;
+    }
+    20% {
+      background-color: #000;
+      z-index: 30;
+      opacity: 1;
+    }
+    30% {
+      background-color: #000;
+      z-index: 20;
+      opacity: 0.6;
+    }
+    40% {
+      background-color: #000;
+      z-index: 10;
+      opacity: 0.5;
+    }
+    50% {
+      background-color: #000;
+      z-index: 5;
+      opacity: 0.4;
+    }
+    60% {
+      background-color: #000;
+      z-index: 3;
+      opacity: 0.3;
+    }
+    70% {
+      background-color: #000;
+      z-index: 2;
+      opacity: 0.2;
+    }
+    90% {
+      z-index: 1;
+      opacity: 0.1;
+    }
+    100% {
+      z-index: -10;
+      opacity: 0;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      background-color: #000;
+      z-index: 50;
+      opacity: 1;
+    }
+    10% {
+      background-color: #000;
+      z-index: 40;
+      opacity: 1;
+    }
+    20% {
+      background-color: #000;
+      z-index: 30;
+      opacity: 1;
+    }
+    30% {
+      background-color: #000;
+      z-index: 20;
+      opacity: 0.6;
+    }
+    40% {
+      background-color: #000;
+      z-index: 10;
+      opacity: 0.5;
+    }
+    50% {
+      background-color: #000;
+      z-index: 5;
+      opacity: 0.4;
+    }
+    60% {
+      background-color: #000;
+      z-index: 3;
+      opacity: 0.3;
+    }
+    70% {
+      background-color: #000;
+      z-index: 2;
+      opacity: 0.2;
+    }
+    90% {
+      z-index: 1;
+      opacity: 0.1;
+    }
+    100% {
+      z-index: -10;
+      opacity: 0;
+    }
+  }
+  .loading--spinner {
     background: #000;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 9;
+    z-index: 100;
   }
-  20% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 8;
+  .loading--spinner {
+    width: 50px;
+    height: 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 50px;
+    border: 10px solid transparent;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    -webkit-animation: loading--spinner 5s ease infinite;
+            animation: loading--spinner 5s ease infinite;
   }
-  30% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 7;
+  @-webkit-keyframes loading--spinner {
+    0% {
+      background: #000;
+      opacity: 10;
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+    }
+    10% {
+      background: #000;
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 9;
+    }
+    20% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 8;
+    }
+    30% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 7;
+    }
+    40% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 6;
+    }
+    50% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      background-color: transparent;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-  40% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 6;
-  }
-  50% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 1;
-  }
-  60% {
-    background: none;
-    opacity: 0;
-  }
-  80% {
-    color: none;
-    background-color: transparent;
-    background-color: none;
-    opacity: 0;
-  }
-  100% {
-    color: none;
-    background-color: none;
-    opacity: 0;
-  }
-}
-
-@keyframes loading--spinner {
-  0% {
-    background: #000;
-    opacity: 10;
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-  }
-  10% {
-    background: #000;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 9;
-  }
-  20% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 8;
-  }
-  30% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 7;
-  }
-  40% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 6;
-  }
-  50% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 1;
-  }
-  60% {
-    background: none;
-    opacity: 0;
-  }
-  80% {
-    color: none;
-    background-color: transparent;
-    background-color: none;
-    opacity: 0;
-  }
-  100% {
-    color: none;
-    background-color: none;
-    opacity: 0;
+  @keyframes loading--spinner {
+    0% {
+      background: #000;
+      opacity: 10;
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+    }
+    10% {
+      background: #000;
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 9;
+    }
+    20% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 8;
+    }
+    30% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 7;
+    }
+    40% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 6;
+    }
+    50% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      background-color: transparent;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
 
@@ -3522,10 +3570,6 @@ body {
     margin-bottom: 20px;
     -webkit-box-shadow: 10px 10px 10px 10px lightgray;
             box-shadow: 10px 10px 10px 10px lightgray;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
     width: 100%;
     border-radius: 15px;
     background-color: white;
@@ -3575,8 +3619,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart {
     color: black;
@@ -3753,7 +3797,7 @@ body {
     width: 112%;
   }
   .flexbox--entree__menu {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -40px;
     border-radius: 40px 40px 0px 0px;
@@ -3823,8 +3867,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -3847,7 +3891,7 @@ body {
   }
   .hearts__icons--wrap-p2 {
     top: 40px;
-    right: 650px;
+    right: 630px;
     position: absolute;
   }
   .hearts__icons--wrap-p2:hover .outline-heart-p2 {
@@ -3859,8 +3903,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -3895,8 +3939,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p3 {
     color: black;
@@ -3931,8 +3975,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, bottom #ff79da, from(#9356DC));
-    background: linear-gradient(to bottom #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p4 {
     color: black;
@@ -4580,7 +4624,7 @@ body {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   }
   .flexbox--entree__menu1 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     margin-top: -180px;
     border-radius: 40px 40px 0px 0px;
@@ -4608,7 +4652,7 @@ body {
     font-size: 25px;
   }
   .flexbox--entree__menu2 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -4945,7 +4989,7 @@ body {
     height: 23.8%;
   }
   .flexbox--entree__menu3 {
-    z-index: 10px;
+    z-index: 10;
     position: relative;
     border-radius: 40px 40px 0px 0px;
     background-color: #f2f2f2;
@@ -4959,153 +5003,247 @@ body {
     display: flex;
     margin-top: -68px;
   }
-}
-
-.loader {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  background: #000;
-  height: 100vh;
-  width: 100vw;
-  -webkit-animation: disappear 3.5s forwards;
-          animation: disappear 3.5s forwards;
-}
-
-@keyframes disappear {
-  0% {
-    background-color: #000;
-    z-index: 50;
-    opacity: 1;
-  }
-  10% {
-    background-color: #000;
-    z-index: 40;
-    opacity: 1;
-  }
-  20% {
-    background-color: #000;
-    z-index: 30;
-    opacity: 1;
-  }
-  30% {
-    background-color: #000;
-    z-index: 20;
-    opacity: 0.6;
-  }
-  40% {
-    background-color: #000;
-    z-index: 10;
-    opacity: 0.5;
-  }
-  50% {
-    background-color: #000;
-    z-index: 5;
-    opacity: 0.4;
-  }
-  60% {
-    background-color: #000;
-    z-index: .25;
-    opacity: 0.3;
-  }
-  70% {
-    background-color: #000;
-    z-index: .2;
-    opacity: 0.2;
-  }
-  90% {
-    z-index: 10;
-    opacity: 0.1;
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-  }
-}
-
-.loading--spinner {
-  background: #000;
-  z-index: 100;
-}
-
-.loading--spinner {
-  width: 50px;
-  height: 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  border-radius: 50px;
-  border: 10px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #FF79DA;
-  -webkit-animation: loading--spinner 5s ease infinite;
-          animation: loading--spinner 5s ease infinite;
-}
-
-@keyframes loading--spinner {
-  0% {
+  .loader {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 100;
     background: #000;
-    opacity: 10;
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
+    height: 100vh;
+    width: 100vw;
+    -webkit-animation: disappear 3.5s forwards;
+            animation: disappear 3.5s forwards;
   }
-  10% {
+  @-webkit-keyframes disappear {
+    0% {
+      background-color: #000;
+      z-index: 50;
+      opacity: 1;
+    }
+    10% {
+      background-color: #000;
+      z-index: 40;
+      opacity: 1;
+    }
+    20% {
+      background-color: #000;
+      z-index: 30;
+      opacity: 1;
+    }
+    30% {
+      background-color: #000;
+      z-index: 20;
+      opacity: 0.6;
+    }
+    40% {
+      background-color: #000;
+      z-index: 10;
+      opacity: 0.5;
+    }
+    50% {
+      background-color: #000;
+      z-index: 5;
+      opacity: 0.4;
+    }
+    60% {
+      background-color: #000;
+      z-index: 3;
+      opacity: 0.3;
+    }
+    70% {
+      background-color: #000;
+      z-index: 2;
+      opacity: 0.2;
+    }
+    90% {
+      z-index: 10;
+      opacity: 0.1;
+    }
+    100% {
+      z-index: -10;
+      opacity: 0;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      background-color: #000;
+      z-index: 50;
+      opacity: 1;
+    }
+    10% {
+      background-color: #000;
+      z-index: 40;
+      opacity: 1;
+    }
+    20% {
+      background-color: #000;
+      z-index: 30;
+      opacity: 1;
+    }
+    30% {
+      background-color: #000;
+      z-index: 20;
+      opacity: 0.6;
+    }
+    40% {
+      background-color: #000;
+      z-index: 10;
+      opacity: 0.5;
+    }
+    50% {
+      background-color: #000;
+      z-index: 5;
+      opacity: 0.4;
+    }
+    60% {
+      background-color: #000;
+      z-index: 3;
+      opacity: 0.3;
+    }
+    70% {
+      background-color: #000;
+      z-index: 2;
+      opacity: 0.2;
+    }
+    90% {
+      z-index: 10;
+      opacity: 0.1;
+    }
+    100% {
+      z-index: -10;
+      opacity: 0;
+    }
+  }
+  .loading--spinner {
     background: #000;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 9;
+    z-index: 10;
   }
-  20% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 8;
+  .loading--spinner {
+    width: 50px;
+    height: 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 50px;
+    border: 10px solid transparent;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    -webkit-animation: loading--spinner 5s ease infinite;
+            animation: loading--spinner 5s ease infinite;
   }
-  30% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 7;
+  @-webkit-keyframes loading--spinner {
+    0% {
+      background: #000;
+      opacity: 10;
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+    }
+    10% {
+      background: #000;
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 9;
+    }
+    20% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 8;
+    }
+    30% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 7;
+    }
+    40% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 6;
+    }
+    50% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      background-color: transparent;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-  40% {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 6;
-  }
-  50% {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    opacity: 1;
-  }
-  60% {
-    background: none;
-    opacity: 0;
-  }
-  80% {
-    color: none;
-    background-color: transparent;
-    background-color: none;
-    opacity: 0;
-  }
-  100% {
-    color: none;
-    background-color: none;
-    opacity: 0;
+  @keyframes loading--spinner {
+    0% {
+      background: #000;
+      opacity: 10;
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+    }
+    10% {
+      background: #000;
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 9;
+    }
+    20% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 8;
+    }
+    30% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 7;
+    }
+    40% {
+      -webkit-transform: rotate(3turn);
+              transform: rotate(3turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 6;
+    }
+    50% {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      background-color: transparent;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
 /*# sourceMappingURL=project3.css.map */
