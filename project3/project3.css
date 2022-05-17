@@ -254,11 +254,13 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap:hover .solid-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
   }
   .outline-heart {
     color: black;
@@ -385,11 +387,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -421,11 +423,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -457,11 +459,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p3 {
     color: black;
@@ -1512,11 +1514,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p4 {
     color: black;
@@ -1540,6 +1542,255 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-top: -68px;
+  }
+}
+
+.loader {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  -webkit-animation: disappear 3.5s forwards;
+          animation: disappear 3.5s forwards;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    background-color: #000;
+    z-index: 50;
+    opacity: 1;
+  }
+  10% {
+    background-color: #000;
+    z-index: 40;
+    opacity: 1;
+  }
+  20% {
+    background-color: #000;
+    z-index: 30;
+    opacity: 1;
+  }
+  30% {
+    background-color: #000;
+    z-index: 20;
+    opacity: 0.6;
+  }
+  40% {
+    background-color: #000;
+    z-index: 10;
+    opacity: 0.5;
+  }
+  50% {
+    background-color: #000;
+    z-index: 5;
+    opacity: 0.4;
+  }
+  60% {
+    background-color: #000;
+    z-index: 3;
+    opacity: 0.3;
+  }
+  70% {
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.2;
+  }
+  90% {
+    z-index: 1;
+    opacity: 0.1;
+  }
+  100% {
+    z-index: -10;
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    background-color: #000;
+    z-index: 50;
+    opacity: 1;
+  }
+  10% {
+    background-color: #000;
+    z-index: 40;
+    opacity: 1;
+  }
+  20% {
+    background-color: #000;
+    z-index: 30;
+    opacity: 1;
+  }
+  30% {
+    background-color: #000;
+    z-index: 20;
+    opacity: 0.6;
+  }
+  40% {
+    background-color: #000;
+    z-index: 10;
+    opacity: 0.5;
+  }
+  50% {
+    background-color: #000;
+    z-index: 5;
+    opacity: 0.4;
+  }
+  60% {
+    background-color: #000;
+    z-index: 3;
+    opacity: 0.3;
+  }
+  70% {
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.2;
+  }
+  90% {
+    z-index: 1;
+    opacity: 0.1;
+  }
+  100% {
+    z-index: -10;
+    opacity: 0;
+  }
+}
+
+.loading--spinner {
+  background: #000;
+  z-index: 100;
+}
+
+.loading--spinner {
+  width: 50px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 50px;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  -webkit-animation: loading--spinner 5s ease infinite;
+          animation: loading--spinner 5s ease infinite;
+}
+
+@-webkit-keyframes loading--spinner {
+  0% {
+    background: #000;
+    opacity: 10;
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+  }
+  10% {
+    background: #000;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 9;
+  }
+  20% {
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 8;
+  }
+  30% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 7;
+  }
+  40% {
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 6;
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    background-color: transparent;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading--spinner {
+  0% {
+    background: #000;
+    opacity: 10;
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+  }
+  10% {
+    background: #000;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 9;
+  }
+  20% {
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 8;
+  }
+  30% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 7;
+  }
+  40% {
+    -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 6;
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    background-color: transparent;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -1818,11 +2069,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -1833,12 +2084,12 @@ body {
     font-size: 25px;
   }
   .solid-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     margin-top: 15px;
     margin-left: -45px;
     position: absolute;
     opacity: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
     font-size: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1856,11 +2107,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap:hover .solid-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart {
     color: black;
@@ -2003,11 +2254,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p4 {
     color: black;
@@ -2030,7 +2281,7 @@ body {
   }
   .hearts__icons--wrap-p2 {
     top: 40px;
-    right: 175px;
+    right: 160px;
     position: absolute;
   }
   .hearts__icons--wrap-p2:hover .outline-heart-p2 {
@@ -2039,11 +2290,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -3373,7 +3624,7 @@ body {
   }
 }
 
-@media all and (min-width: 992px) and (max-width: 1800px) {
+@media all and (min-width: 992px) and (max-width: 2400px) {
   .logo {
     -webkit-box-shadow: black 10px 0px 10px 0px;
             box-shadow: black 10px 0px 10px 0px;
@@ -3616,11 +3867,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap:hover .solid-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
   }
   .outline-heart {
     color: black;
@@ -3864,11 +4115,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -3900,11 +4151,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p2 {
     color: black;
@@ -3936,11 +4187,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p3 {
     color: black;
@@ -3972,11 +4223,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p4 {
     color: black;

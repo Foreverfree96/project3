@@ -201,10 +201,11 @@
             3s;
         }
         .hearts__icons--wrap:hover .solid-heart {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            transition: opacity 3s;
         }
         .outline-heart{
             color: black;
@@ -313,10 +314,10 @@
             3s;
         }
         .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            background: linear-gradient( #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient( #FF79DA, #9356DC);
         }
         .outline-heart-p1{
             color: black;
@@ -347,10 +348,10 @@
             3s;
         }
         .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            background: linear-gradient( #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient( #FF79DA, #9356DC);
         }
         .outline-heart-p2{
             color: black;
@@ -381,10 +382,10 @@
             3s;
         }
         .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+            background: linear-gradient( #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient( #FF79DA, #9356DC);
         }
         .outline-heart-p3{
             color: black;
@@ -1246,10 +1247,10 @@
             3s;
         }
         .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
         }
         .outline-heart-p4{
             color: black;
@@ -1271,7 +1272,127 @@
         }
 
     }
+    .loader{
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        background: #000;
+        height: 100vh;
+        width: 100vw;
+        animation: disappear 3.5s forwards;
+        }
+        @keyframes disappear {
+        0%{
+            background-color: #000;
+            z-index: 50;
+            opacity: 1;
+        }
+        10%{
+            background-color: #000;
+            z-index: 40;
+            opacity: 1;
+        }
+        20%{
+            background-color: #000;
+            z-index: 30;
+            opacity: 1;
+        }
+        30%{
+            background-color: #000;
+            z-index: 20;
+            opacity: 0.6;
+        }
+        40%{
+            background-color: #000;
+            z-index: 10;
+            opacity: 0.5;
+        }
+        50%{
+            background-color: #000;
+            z-index: 5;
+            opacity: 0.4;
+        }
+        60%{
+            background-color: #000;
+            z-index: 3;
+            opacity: 0.3;
+        }
+        70%{
+            background-color: #000;
+            z-index: 2;
+            opacity: 0.2;
+        }
+        90% {
+            z-index: 1;
+            opacity: 0.1;
+          }
+        100% {
+            z-index: -10;
+            opacity: 0;
+          }
+        }
+    .loading--spinner{
+        background: #000;
+        z-index: 100;
+        
+        }
+        .loading--spinner{
+            width: 50px;
+            height: 50px;    
+            background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+            border-radius: 50px;
+            border: 10px solid transparent;
+            border-top-color: #9356DC;
+            border-bottom-color: #FF79DA;
+            animation: loading--spinner 5s ease infinite;
 
+       @keyframes loading--spinner {
+           0%{
+               background: #000;
+               opacity: 10;
+               transform: rotate(3turn);
+           }
+           10%{
+               background: #000;
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 9;
+           }
+           20%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 8;
+           }
+           30%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 7;
+           }
+           40%{
+               transform: rotate(3turn);
+               animation-duration: 3s;
+               opacity: 6;
+           }
+        50%{
+               transform: rotate(1turn);
+               animation-duration: 3s;
+               opacity: 1;
+           }
+        60%{
+               opacity: 0;
+           }
+        80%{
+            background-color: transparent;
+            opacity: 0;
+           }
+        100%{
+               opacity: 0;
+           }
+        }
+    }
+    
         // TABLET VERSION \\
     @media all and (max-width: 992px) and (min-width: 768px){
         .img__size--logo{
@@ -1502,10 +1623,10 @@
             3s;
         }
         .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p2{
             color: black;
@@ -1515,11 +1636,11 @@
             font-size: 25px;
         }
         .solid-heart{
+            background: linear-gradient(#FF79DA, #9356DC);
             margin-top: 15px;
             margin-left: -45px;
             position: absolute;
             opacity: 0;
-            background: linear-gradient(#FF79DA, #9356DC);
             font-size: 25px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -1537,10 +1658,10 @@
             3s;
         }
         .hearts__icons--wrap:hover .solid-heart {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart{
             color: black;
@@ -1660,10 +1781,10 @@
             3s;
         }
         .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p4{
             color: black;
@@ -1685,7 +1806,7 @@
         }
         .hearts__icons--wrap-p2{
             top: 40px;
-            right: 175px;
+            right: 160px;
             position: absolute;
         }
         .hearts__icons--wrap-p2:hover .outline-heart-p2 {
@@ -1694,10 +1815,10 @@
             3s;
         }
         .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
         }
         .outline-heart-p2{
             color: black;
@@ -2724,7 +2845,7 @@
      // DESKTOP VERSION \\
      // DESKTOP VERSION \\
     // DESKTOP VERSION \\
-    @media all and (min-width: 992px) and (max-width: 1800px){
+    @media all and (min-width: 992px) and (max-width: 2400px){
         .logo {
             box-shadow:  black 10px 0px 10px 0px;
             padding-bottom: 5px;
@@ -2927,10 +3048,10 @@
             3s;
         }
         .hearts__icons--wrap:hover .solid-heart {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
         }
         .outline-heart{
             color: black;
@@ -3122,10 +3243,10 @@
             3s;
         }
         .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p1{
             color: black;
@@ -3156,10 +3277,10 @@
             3s;
         }
         .hearts__icons--wrap-p2:hover .solid-heart-p2 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p2{
             color: black;
@@ -3190,10 +3311,10 @@
             3s;
         }
         .hearts__icons--wrap-p3:hover .solid-heart-p3 {
+            background: linear-gradient( #FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient( #FF79DA, #9356DC);
         }
         .outline-heart-p3{
             color: black;
@@ -3224,10 +3345,10 @@
             3s;
         }
         .hearts__icons--wrap-p4:hover .solid-heart-p4 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p4{
             color: black;
