@@ -233,10 +233,10 @@ body {
     margin-left: 20px;
   }
   .solid-heart {
-    position: absolute;
-    opacity: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
+    position: absolute;
+    opacity: 0;
     font-size: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -366,13 +366,13 @@ body {
     bottom: 0;
   }
   .solid-heart-p1 {
-    position: absolute;
-    opacity: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
-    font-size: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+    opacity: 0;
+    font-size: 25px;
     -webkit-transition: opacity 3s;
     transition: opacity 3s;
   }
@@ -868,8 +868,8 @@ body {
   }
   .entree__card .animation_holder1 {
     width: 20%;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .animation_holder {
     -webkit-transition: width 3s;
@@ -2033,11 +2033,11 @@ body {
     transition: opacity 3s;
   }
   .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
   }
   .outline-heart-p1 {
     color: black;
@@ -3850,9 +3850,9 @@ body {
     opacity: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
-    font-size: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 25px;
     -webkit-transition: opacity 3s;
     transition: opacity 3s;
   }

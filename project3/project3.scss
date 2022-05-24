@@ -181,9 +181,9 @@
             margin-left: 20px;
         }
         .solid-heart{
+            background: linear-gradient(#FF79DA, #9356DC);
             position: absolute;
             opacity: 0;
-            background: linear-gradient(#FF79DA, #9356DC);
             font-size: 25px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -294,12 +294,12 @@
             bottom: 0;
         }
         .solid-heart-p1{
-            position: absolute;
-            opacity: 0;
             background: linear-gradient(#FF79DA, #9356DC);
-            font-size: 25px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            position: absolute;
+            opacity: 0;
+            font-size: 25px;
             transition: opacity
             3s;
         }
@@ -685,7 +685,7 @@
         }
         .entree__card .animation_holder1{
             width: 20%;
-            transition: all 1s ease-out;
+            transition: all 1s ease-in-out;
         }
         .animation_holder{
             transition: width 3s;
@@ -1589,10 +1589,10 @@
             3s;
         }
         .hearts__icons--wrap-p1:hover .solid-heart-p1 {
+            background: linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 100%;
-            background: linear-gradient(#FF79DA, #9356DC);
         }
         .outline-heart-p1{
             color: black;
@@ -2211,7 +2211,7 @@
             position: absolute;
             bottom: 5px;
             left: 100%;
-            overflow:hidden;
+            overflow: hidden;
             transition: 1s ease-in-out;
             height: 87.5%;
         }
@@ -3031,9 +3031,9 @@
             position: absolute;
             opacity: 0;
             background: linear-gradient(#FF79DA, #9356DC);
-            font-size: 25px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-size: 25px;
             transition: opacity
             3s;
         }
