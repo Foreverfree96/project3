@@ -484,10 +484,8 @@
             transition: all 1s ease-out;
         }
         .entree__card{
-            font-size: 13px;
             box-shadow: 1px 1px 1px 1px gray;
             border-radius: 15px;
-            padding: 25px 25px 40px 15px;
             margin-top: 10px;
             background-color: white;
             display: flex;
@@ -591,62 +589,72 @@
                 }
             }
         }
-        .entree__card--wrap{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .cont{
+        .some-wrap {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
             overflow: hidden;
-        }
-        .text {
-            font-size: 13px;
-            display: flex;
             align-items: center;
-            width: 80%;
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+          }
+
+          .text {
+            padding-left: 10px;
+            // margin: 10px;
+            font-size: 13px;
+            width: 75%;
             flex: none;
-            transition:  width 1.5s;
-        }
-        .cont:hover .text {
-            width: 50%;
-            transition: width 3s;
-        }
-        .cont:hover .check-mark {
-            transform: rotate(360deg);
-            transition: transform 1s;
-        }
-        .cont:hover .check-mark1 {
-            transform: rotate(360deg);
-            transition: transform 1000ms;
-        }
-        .money1{
+            transition: width 1.5s;
+
+            h3{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+          }
           
-            margin-top: 60px;
-            vertical-align: baseline;
-            right: -20px;
-            position: absolute;
+          .price {
             font-weight: bold;
             font-family: roboto;
+            padding: 25px;
             width: 25%;
             flex: none;
-        }
-        .cont:hover .money1{
-            transition: ease-in .7s;
-            width: 40%;
-        }
-        .money{
-            margin-top: 35px;
-            vertical-align: baseline;
-            right: -20px;
-            position: absolute;
-            font-weight: bold;
-            font-family: roboto;
-            width: 25%;
+          }
+          
+          .holder {
+            border-radius: 0px 15px 15px 0px;
+            padding: 20px 15px;
+            background-color: $mint-green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex: none;
-        }
+            width: 25%;
+          }
+          
+          .checkmark {
+            font-size: 2rem;
+          }
+          
+          .some-wrap:hover .text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 50%;
+            transition: width 1s;
+          }
+          
+          .some-wrap:hover .checkmark {
+            transform: rotate(720deg);
+            transition: transform 1s;
+          }
+       
         .holder1--p4{
             position: absolute;
             border-radius: 0px 15px 15px 0px;
@@ -670,35 +678,6 @@
             justify-content: center;
             align-items: center;
             flex: none;
-        }
-        .holder{
-            position: absolute;
-            border-radius: 0px 15px 15px 0px;
-            padding: 22px;
-            background-color: $mint-green;
-            color: white;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: none;
-        }
-        .entree__card .animation_holder1{
-            width: 20%;
-            transition: all 1s ease-in-out;
-        }
-        .animation_holder{
-            transition: width 3s;
-            position: absolute;
-            bottom: 5px;
-            left: 100%;
-            overflow:hidden;
-            transition: 1s ease-in;
-            height: 80%;
-        }
-        .entree__card:hover .animation_holder1{
-            width: 20%;
-            left: 75%;
         }
         .animation_holder1{
             position: absolute;
@@ -1513,6 +1492,73 @@
             font-family: roboto;
             margin-left: 25px;
         }
+        .some-wrap {
+            width: 100%;
+            overflow: hidden;
+            align-items: center;
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+          }
+
+          .text {
+            display: block;
+            padding-left: 10px;
+            // margin: 10px;
+            font-size: 13px;
+            width: 75%;
+            flex: none;
+            transition: width 1.5s;
+
+            h3{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+          }
+          
+          
+          .price {
+            font-weight: bold;
+            font-family: roboto;
+            padding: 25px;
+            width: 25%;
+            flex: none;
+          }
+          
+          .holder {
+            border-radius: 0px 15px 15px 0px;
+            padding: 20px 15px;
+            background-color: $mint-green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+            width: 25%;
+          }
+          
+          .checkmark {
+            font-size: 2rem;
+          }
+          
+          .some-wrap:hover .text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 50%;
+            transition: width 1s;
+          }
+          
+          .some-wrap:hover .checkmark {
+            transform: rotate(720deg);
+            transition: transform 1s;
+          }
         .restuarants--title{
             justify-content: flex-start;
             display: flex;
@@ -1647,6 +1693,7 @@
             transition: opacity
             3s;
         }
+        
         .hearts__icons--wrap{
             top: 210px;
             right: 25px;
@@ -1845,21 +1892,17 @@
             font-family: roboto;
         }
         .entree__card{
-            font-size: 13px;
             box-shadow: 1px 1px 1px 1px gray;
             border-radius: 15px;
-            padding: 25px 25px 40px 15px;
             margin-top: 10px;
             background-color: white;
             display: flex;
             align-items: center;
             font-family: roboto;
+            animation-name: reappear;
+            animation-duration: 2s;
         }
-        .entree__card--wrap{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        
         .cont{
             width: 100%;
             display: flex;
@@ -1867,10 +1910,8 @@
             overflow: hidden;
         }
         .entree__card0{
-            font-size: 13px;
             box-shadow: 1px 1px 1px 1px gray;
             border-radius: 15px;
-            padding: 30px 25px 50px 15px;
             margin-top: 10px;
             background-color: white;
             display: flex;
@@ -1910,19 +1951,7 @@
             width: 20%;
             transition: all 1s ease-out;
         }
-        .entree__card{
-            font-size: 13px;
-            box-shadow: 1px 1px 1px 1px gray;
-            border-radius: 15px;
-            padding: 25px 25px 40px 15px;
-            margin-top: 10px;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            font-family: roboto;
-            animation-name: reappear;
-            animation-duration: 2s;
-        }
+    
         .entree__card{
             @keyframes reappear {
                 0% {
@@ -1951,7 +1980,7 @@
             display: flex;
             align-items: center;
             width: 80%;
-            flex: none;
+            display: block;
             transition: 1s;
         }
         .cont:hover .text {
@@ -1961,29 +1990,6 @@
         .cont:hover .check-mark {
             transform: rotate(360deg);
             transition: transform 1000ms;
-        }
-        .money{
-            font-size: 18px;
-            margin-top: 35px;
-            vertical-align: baseline;
-            right: -20px;
-            position: absolute;
-            font-weight: bold;
-            font-family: roboto;
-            width: 25%;
-            flex: none;
-        }
-        .holder{
-            position: absolute;
-            border-radius: 0px 15px 15px 0px;
-            padding: 22px;
-            background-color: $mint-green;
-            color: white;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: none;
         }
         .entree__card:hover .animation_holder{
             width: 20%;
@@ -3001,6 +3007,72 @@
             height: 300px;
             width: 100%;
         }
+        .some-wrap {
+            width: 100%;
+            overflow: hidden;
+            align-items: center;
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+          }
+
+          .text {
+            padding-left: 10px;
+            font-size: 13px;
+            width: 75%;
+            flex: none;
+            transition: width 1.5s;
+
+            h3{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+          }
+          
+          .price {
+            font-weight: bold;
+            font-family: roboto;
+            padding: 25px;
+            width: 25%;
+            flex: none;
+          }
+          
+          .holder {
+            border-radius: 0px 15px 15px 0px;
+            padding: 20px 15px;
+            background-color: $mint-green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+            width: 25%;
+          }
+          
+          .checkmark {
+            font-size: 2rem;
+          }
+          
+          .some-wrap:hover .text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 50%;
+            transition: width 1s;
+          }
+          
+          
+          .some-wrap:hover .checkmark {
+            transform: rotate(720deg);
+            transition: transform 1s;
+          }
+       
         .menu__cards {
             position: relative;
             margin: 20px 5px 0 20px;
@@ -3700,18 +3772,6 @@
             font-weight: bold;
             font-family: roboto;
             width: 25%;
-            flex: none;
-        }
-        .holder{
-            position: absolute;
-            border-radius: 0px 15px 15px 0px;
-            padding: 22px;
-            background-color: $mint-green;
-            color: white;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex: none;
         }
         .entree__card:hover .animation_holder{

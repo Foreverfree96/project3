@@ -597,11 +597,9 @@ body {
     transition: all 1s ease-out;
   }
   .entree__card {
-    font-size: 13px;
     -webkit-box-shadow: 1px 1px 1px 1px gray;
             box-shadow: 1px 1px 1px 1px gray;
     border-radius: 15px;
-    padding: 25px 25px 40px 15px;
     margin-top: 10px;
     background-color: white;
     display: -webkit-box;
@@ -719,92 +717,84 @@ body {
       opacity: 1;
     }
   }
-  .entree__card--wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .some-wrap {
+    width: 100%;
+    overflow: hidden;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .cont {
-    width: 100%;
+    border-radius: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     overflow: hidden;
   }
   .text {
+    padding-left: 10px;
     font-size: 13px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
+    width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
     -webkit-transition: width 1.5s;
     transition: width 1.5s;
   }
-  .cont:hover .text {
-    width: 50%;
-    -webkit-transition: width 3s;
-    transition: width 3s;
+  .text h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .cont:hover .check-mark {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  .text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .price {
+    font-weight: bold;
+    font-family: roboto;
+    padding: 25px;
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .holder {
+    border-radius: 0px 15px 15px 0px;
+    padding: 20px 15px;
+    background-color: #99E2D0;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 25%;
+  }
+  .checkmark {
+    font-size: 2rem;
+  }
+  .some-wrap:hover .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .some-wrap:hover .checkmark {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
-  }
-  .cont:hover .check-mark1 {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transition: -webkit-transform 1000ms;
-    transition: -webkit-transform 1000ms;
-    transition: transform 1000ms;
-    transition: transform 1000ms, -webkit-transform 1000ms;
-  }
-  .money1 {
-    margin-top: 60px;
-    vertical-align: baseline;
-    right: -20px;
-    position: absolute;
-    font-weight: bold;
-    font-family: roboto;
-    width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .cont:hover .money1 {
-    -webkit-transition: ease-in .7s;
-    transition: ease-in .7s;
-    width: 40%;
-  }
-  .money {
-    margin-top: 35px;
-    vertical-align: baseline;
-    right: -20px;
-    position: absolute;
-    font-weight: bold;
-    font-family: roboto;
-    width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
   }
   .holder1--p4 {
     position: absolute;
@@ -845,46 +835,6 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
-  }
-  .holder {
-    position: absolute;
-    border-radius: 0px 15px 15px 0px;
-    padding: 22px;
-    background-color: #99E2D0;
-    color: white;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .entree__card .animation_holder1 {
-    width: 20%;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-  }
-  .animation_holder {
-    -webkit-transition: width 3s;
-    transition: width 3s;
-    position: absolute;
-    bottom: 5px;
-    left: 100%;
-    overflow: hidden;
-    -webkit-transition: 1s ease-in;
-    transition: 1s ease-in;
-    height: 80%;
-  }
-  .entree__card:hover .animation_holder1 {
-    width: 20%;
-    left: 75%;
   }
   .animation_holder1 {
     position: absolute;
@@ -1940,6 +1890,86 @@ body {
     font-family: roboto;
     margin-left: 25px;
   }
+  .some-wrap {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .text {
+    display: block;
+    padding-left: 10px;
+    font-size: 13px;
+    width: 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-transition: width 1.5s;
+    transition: width 1.5s;
+  }
+  .text h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .price {
+    font-weight: bold;
+    font-family: roboto;
+    padding: 25px;
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .holder {
+    border-radius: 0px 15px 15px 0px;
+    padding: 20px 15px;
+    background-color: #99E2D0;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 25%;
+  }
+  .checkmark {
+    font-size: 2rem;
+  }
+  .some-wrap:hover .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .some-wrap:hover .checkmark {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
   .restuarants--title {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2325,11 +2355,9 @@ body {
     font-family: roboto;
   }
   .entree__card {
-    font-size: 13px;
     -webkit-box-shadow: 1px 1px 1px 1px gray;
             box-shadow: 1px 1px 1px 1px gray;
     border-radius: 15px;
-    padding: 25px 25px 40px 15px;
     margin-top: 10px;
     background-color: white;
     display: -webkit-box;
@@ -2339,18 +2367,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     font-family: roboto;
-  }
-  .entree__card--wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-animation-name: reappear;
+            animation-name: reappear;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
   .cont {
     width: 100%;
@@ -2363,11 +2383,9 @@ body {
     overflow: hidden;
   }
   .entree__card0 {
-    font-size: 13px;
     -webkit-box-shadow: 1px 1px 1px 1px gray;
             box-shadow: 1px 1px 1px 1px gray;
     border-radius: 15px;
-    padding: 30px 25px 50px 15px;
     margin-top: 10px;
     background-color: white;
     display: -webkit-box;
@@ -2433,26 +2451,6 @@ body {
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
-  .entree__card {
-    font-size: 13px;
-    -webkit-box-shadow: 1px 1px 1px 1px gray;
-            box-shadow: 1px 1px 1px 1px gray;
-    border-radius: 15px;
-    padding: 25px 25px 40px 15px;
-    margin-top: 10px;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: roboto;
-    -webkit-animation-name: reappear;
-            animation-name: reappear;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
   @keyframes reappear {
     0% {
       margin-top: 20px;
@@ -2483,9 +2481,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    display: block;
     -webkit-transition: 1s;
     transition: 1s;
   }
@@ -2501,39 +2497,6 @@ body {
     transition: -webkit-transform 1000ms;
     transition: transform 1000ms;
     transition: transform 1000ms, -webkit-transform 1000ms;
-  }
-  .money {
-    font-size: 18px;
-    margin-top: 35px;
-    vertical-align: baseline;
-    right: -20px;
-    position: absolute;
-    font-weight: bold;
-    font-family: roboto;
-    width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .holder {
-    position: absolute;
-    border-radius: 0px 15px 15px 0px;
-    padding: 22px;
-    background-color: #99E2D0;
-    color: white;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
   }
   .entree__card:hover .animation_holder {
     width: 20%;
@@ -3814,6 +3777,85 @@ body {
     height: 300px;
     width: 100%;
   }
+  .some-wrap {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .text {
+    padding-left: 10px;
+    font-size: 13px;
+    width: 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-transition: width 1.5s;
+    transition: width 1.5s;
+  }
+  .text h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .price {
+    font-weight: bold;
+    font-family: roboto;
+    padding: 25px;
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .holder {
+    border-radius: 0px 15px 15px 0px;
+    padding: 20px 15px;
+    background-color: #99E2D0;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 25%;
+  }
+  .checkmark {
+    font-size: 2rem;
+  }
+  .some-wrap:hover .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .some-wrap:hover .checkmark {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
   .menu__cards {
     position: relative;
     margin: 20px 5px 0 20px;
@@ -4667,26 +4709,6 @@ body {
     font-weight: bold;
     font-family: roboto;
     width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .holder {
-    position: absolute;
-    border-radius: 0px 15px 15px 0px;
-    padding: 22px;
-    background-color: #99E2D0;
-    color: white;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
